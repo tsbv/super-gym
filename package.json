@@ -1,0 +1,61 @@
+{
+  "name": "accelerator-first-project",
+  "private": true,
+  "version": "0.0.1",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host --open",
+    "test": "backstop test --config=pp.config.cjs",
+    "test-js": "backstop test --config=js.config.cjs",
+    "test-content": "vitest content.test.ts --ui",
+    "build": "vite build --emptyOutDir",
+    "preview": "vite preview --open",
+    "convert-rastr": "node convert-rastr.js",
+    "w3c": "html-validator source --quiet",
+    "linthtml": "linthtml source",
+    "html-validate": "html-validate source/index.html",
+    "lint-bem": "node bem-tree.js",
+    "stylelint": "stylelint \"source/sass/**/*.scss\" --fix",
+    "lint-js": "eslint source/js --fix",
+    "ls-lint": "ls-lint",
+    "editorconfig": "editorconfig-cli"
+  },
+  "devDependencies": {
+    "@htmlacademy/editorconfig-cli": "3.0.0",
+    "@linthtml/linthtml": "0.9.5",
+    "@ls-lint/ls-lint": "2.2.2",
+    "@spiriit/vite-plugin-svg-spritemap": "2.2.4",
+    "@vitest/ui": "0.34.7",
+    "autoprefixer": "10.4.17",
+    "cli-progress": "3.12.0",
+    "eslint": "8.57.0",
+    "eslint-config-htmlacademy": "10.0.1",
+    "glob": "10.3.10",
+    "gulp-html-bemlinter": "3.0.1",
+    "html-validate": "8.11.1",
+    "htmlacademy-backstopjs": "6.6.1",
+    "linthtml-config-htmlacademy": "1.0.19",
+    "sass": "1.71.1",
+    "sharp": "0.33.2",
+    "stylelint": "16.2.1",
+    "stylelint-config-htmlacademy": "4.1.0",
+    "stylelint-config-standard-scss": "13.0.0",
+    "stylelint-selector-bem-pattern": "4.0.0",
+    "svgo": "3.2.0",
+    "vinyl-fs": "4.0.0",
+    "vite": "5.1.4",
+    "vite-plugin-image-optimizer": "1.1.7",
+    "vite-plugin-minify": "1.5.2",
+    "vitest": "^0.34.6",
+    "w3c-html-validator": "1.6.4"
+  },
+  "dependencies": {
+    "swiper": "11.0.7"
+  },
+  "engines": {
+    "node": "^18.18 || ^20.9"
+  },
+  "volta": {
+    "node": "20.11.0"
+  }
+}
