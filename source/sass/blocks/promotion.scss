@@ -1,0 +1,43 @@
+.promotion__description-wrapper {
+  padding: 30px;
+  background-color: $play-btn;
+}
+
+.promotion__time {
+  margin: 0 0 28px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 100%;
+  color: $white;
+}
+
+.promotion__price {
+  margin-top: 9px;
+  display: block;
+  font-size: 64px;
+  line-height: 100%;
+}
+
+.promotion__text {
+  margin: 0 0 28px;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 125%;
+  text-align: center;
+  color: $white;
+}
+
+.promotion__link {
+  margin: 0 auto;
+  padding-bottom: 5px;
+  max-width: 73px;
+  display: block;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 100%;
+  text-transform: uppercase;
+  color: $white;
+  border-bottom: 1px solid $white;
+}
