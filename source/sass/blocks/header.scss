@@ -1,0 +1,15 @@
+.header {
+  margin: 0 0 48px;
+  padding: 16px 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.header__link {
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 100%;
+  color: $white;
+}

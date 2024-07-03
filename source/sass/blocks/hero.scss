@@ -1,0 +1,62 @@
+.hero {
+  padding: 0 15px 32px;
+  background: linear-gradient(90deg, $btn-border 0%, $btn-border 0.01%, #1a3578 39.11%, #73184b 75.5%, #b4022a 100%);
+}
+
+.hero__content {
+  display: grid;
+  grid-template-columns: 113px 156px;
+  gap: 21px;
+}
+
+.hero__text {
+  max-width: 113px;
+  grid-row: 2;
+  align-self: flex-end;
+  font-family: $font-family;
+  font-size: 14px;
+  line-height: 143%;
+  text-align: right;
+  color: $white;
+}
+
+.hero__city {
+  grid-column: 2;
+  font-family: $second-family;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 100%;
+  color: $white;
+  text-align: right;
+}
+
+.hero__title {
+  margin: 0;
+  grid-column: 2;
+  font-family: $second-family;
+  font-weight: 800;
+  font-size: 62px;
+  line-height: 100%;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  text-align: right;
+  color: $white;
+}
+
+.hero__image {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+}
+
+.hero__link  {
+  text-decoration: none;
+  grid-column: 1 / -1;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 100%;
+  text-transform: uppercase;
+  text-align: center;
+}
