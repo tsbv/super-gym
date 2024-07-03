@@ -1,0 +1,39 @@
+.juri {
+  padding: 40px 15px;
+}
+
+.juri__title {
+  margin: 0 0 20px;
+  text-align: center;
+}
+
+.juri__image-wrapper {
+  position: relative;
+}
+
+.juri__image {
+  margin: 0 auto;
+}
+
+.juri__name {
+  margin: 0;
+  position: absolute;
+  bottom: 25px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 100%;
+  text-align: center;
+  color: $white;
+}
+
+.juri__info {
+  display: none;
+}
+
+.juri__card {
+  &:not(:first-child) {
+    display: none;
+  }
+}
