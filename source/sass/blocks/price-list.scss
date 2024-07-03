@@ -1,0 +1,18 @@
+.price-list {
+  margin: 0 0 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 34px;
+}
+
+.price-list__button {
+  padding: 6px 0;
+  font-size: 16px;
+  line-height: 100%;
+  color: $light;
+
+  &--active {
+    color: $primary-dark;
+    border-bottom: 2px solid #d10a42;
+  }
+}
