@@ -62,7 +62,7 @@
         </div>
       </section>
       <section class="price" data-test="price">
-        <div class="container">
+        <div class="price__container container">
           <h2 class="price__title title">Абонементы</h2>
           <ul class="price-list reset-list">
             <li class="price-list__item">
@@ -107,7 +107,7 @@
         </div>
       </section>
       <section class="games" data-test="games">
-        <div class="container">
+        <div class="games__container container">
           <div class="games__information">
             <h2 class="games__title title">Super Games</h2>
             <p class="date-time">
@@ -122,7 +122,16 @@
             <p class="games__text">Ежегодные соревнования по CrossFit</p>
             <a class="games__link button button--light" href="#">Заполнить заявку</a>
           </div>
-          <img src="img/games/games-mobile.jpg" width="290" height="290" alt="Изображение c соревнований по CrossFit.">
+          <div class="games__image-wrapper">
+            <picture>
+              <source type="image/webp" media="(min-width: 1366px)" srcset="img/games/games-desktop.webp 1x, img/games/games-desktop@2x.webp 2x" width="660" height="500">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/games/games-tablet.webp 1x, img/games/games-tablet@2x.webp 2x" width="378" height="348">
+              <source type="image/webp" srcset="img/games/games-mobile.webp 1x, img/games/games-mobile@2x.webp 2x" width="290" height="290">
+              <source type="image/jpeg" media="(min-width: 1366px)" srcset="img/games/games-desktop.jpg, img/games/games-desktop@2x.jpg 2x" width="660" height="500">
+              <source type="image/jpeg" media="(min-width: 768px)" srcset="img/games/games-tablet.jpg, img/games/games-tablet@2x.jpg 2x" width="378" height="348">
+              <img class="games__image" src="img/games/games-mobile.jpg" srcset="img/games/games-mobile@2x.jpg 2x" width="290" height="290" alt="Изображение c соревнований по CrossFit.">
+            </picture>
+          </div>
         </div>
       </section>
       <section class="juri" data-test="juri">

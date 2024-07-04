@@ -2,4 +2,9 @@
   display: flex;
   flex-direction: column;
   gap: 35px;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+    gap: 40px;
+  }
 }

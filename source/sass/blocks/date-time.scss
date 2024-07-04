@@ -17,6 +17,18 @@
     top: 45%;
     left: 0;
     background-color: $white;
+
+    @media (min-width: $tablet-width) {
+      top: 24px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 13px 85px;
+    font-size: 18px;
+    line-height: 133%;
+    gap: 4px 5px;
+    align-items: center;
   }
 }
 
@@ -33,6 +45,11 @@
   font-size: 12px;
   line-height: 100%;
   color: $white;
+
+  @media (min-width: $tablet-width) {
+    font-size: 14px;
+    line-height: 157%;
+  }
 }
 
 .date-time__time-value {
