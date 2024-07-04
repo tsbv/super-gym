@@ -4,4 +4,8 @@
   font-size: 32px;
   line-height: 100%;
   color: $primary-dark;
+
+  @media (min-width: $tablet-width) {
+    font-size: 42px;
+  }
 }

@@ -20,6 +20,7 @@
   max-width: 320px;
 
   @media (min-width: $tablet-width) {
+    padding: 60px 45px 36px;
     max-width: 768px;
   }
 
@@ -30,14 +31,25 @@
 
 .about__title {
   margin: 0 0 12px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 20px;
+    text-align: center;
+  }
 }
 
 .about__info {
-  display: inline-block;
+  display: block;
   margin: 0 0 36px;
   font-size: 18px;
   line-height: 111%;
   color: $primary-dark;
+
+  @media (min-width: $tablet-width) {
+    text-align: center;
+    font-size: 20px;
+    line-height: 100%;
+  }
 }
 
 .about__text-content {
@@ -47,6 +59,14 @@
     font-size: 14px;
     line-height: 157%;
     color: $primary-dark;
+
+    @media (min-width: $tablet-width) {
+      margin: 0 auto;
+      font-size: 16px;
+      line-height: 150%;
+      text-align: center;
+      max-width: 502px;
+    }
   }
 
   p:last-child {
