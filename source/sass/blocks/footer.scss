@@ -1,9 +1,27 @@
 .footer {
   padding: 40px 15px;
   background-color: $dark;
+
+  @media (min-width: $tablet-width) {
+    padding: 45px;
+  }
+}
+
+.footer__container {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 110px 392px 105px;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+  }
 }
 
 .footer__logo {
   display: inline-block;
   margin: 0 0 30px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0px;
+  }
 }

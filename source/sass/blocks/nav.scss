@@ -3,6 +3,11 @@
   display: flex;
   flex-wrap: wrap;
   gap: 20px 35px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    gap: 30px;
+  }
 }
 
 .nav__link {
