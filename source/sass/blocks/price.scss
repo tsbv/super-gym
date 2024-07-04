@@ -1,6 +1,10 @@
 .price {
   padding: 40px 15px;
   background-color: $primary-bg;
+
+  @media (min-width: $tablet-width) {
+    padding: 60px 194px;
+  }
 }
 
 .price__title {

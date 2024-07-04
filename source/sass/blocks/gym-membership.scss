@@ -1,17 +1,40 @@
 .gym-membership {
   padding: 50px 42px;
   background-color: $white;
+
+  @media (min-width: $tablet-width) {
+    padding: 65px;
+  }
 }
 
 .gym-membership__name {
   margin: 0 0 18px;
   text-align: center;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 100%;
+  color: $primary-dark;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 22px;
+    font-size: 24px;
+  }
 }
 
 .gym-membership__time {
   margin: 0 0 18px;
   display: block;
   text-align: center;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 157%;
+  color: $primary-dark;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 22px;
+    font-size: 16px;
+    line-height: 150%;
+  }
 }
 
 .gym-membership__price {
@@ -40,6 +63,10 @@
     color: $price-shadow;
     opacity: 0.48;
     z-index: -1;
+
+    @media (min-width: $tablet-width) {
+      font-size: 100px;
+    }
   }
 
   &::after {
@@ -51,6 +78,20 @@
     bottom: 20px;
     background-image: url("../../img/sprite/ruble-icon.svg");
     background-repeat: no-repeat;
+    background-size: 24px 33px;
+
+    @media (min-width: $tablet-width) {
+      width: 30px;
+      height: 42px;
+      bottom: 24px;
+      background-size: 30px 42px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 60px 86px 0 42px;
+    font-size: 60px;
+    line-height: 150%;
   }
 }
 

@@ -3,9 +3,16 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 34px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 auto 45px;
+    max-width: 310px;
+    gap: 43px;
+  }
 }
 
 .price-list__button {
+  font-family: $font-family;
   padding: 6px 0;
   font-size: 16px;
   line-height: 100%;
@@ -14,5 +21,9 @@
   &--active {
     color: $primary-dark;
     border-bottom: 2px solid #d10a42;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
   }
 }
