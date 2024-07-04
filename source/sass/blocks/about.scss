@@ -1,5 +1,10 @@
 .about {
   margin: 0 0 40px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 35px;
+    padding: 0 45px;
+  }
 }
 
 .about__container {
@@ -83,4 +88,12 @@
   display: block;
   width: 100%;
   object-fit: cover;
+}
+
+.about__video {
+  @media (min-width: $tablet-width) {
+    margin-top: -18%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+  }
 }

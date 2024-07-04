@@ -31,6 +31,11 @@
     inset: 0;
     background-color: rgba(20, 54, 122, 0.5);
   }
+
+  @media (min-width: $tablet-width) {
+    max-width: 270px;
+    background-image: url("../../img/about/video-preview-tablet.jpg");
+  }
 }
 
 .video__iframe {
