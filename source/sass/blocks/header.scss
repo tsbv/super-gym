@@ -4,6 +4,11 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    padding: 30px 0;
+  }
 }
 
 .header__link {
@@ -12,4 +17,8 @@
   font-size: 22px;
   line-height: 100%;
   color: $white;
+
+  @media (min-width: $tablet-width) {
+    font-size: 24px;
+  }
 }
