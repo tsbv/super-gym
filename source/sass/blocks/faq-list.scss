@@ -1,0 +1,25 @@
+.faq-list {
+  margin: 0 0 35px;
+  display: grid;
+  grid-template-columns: 140px 140px;
+  gap: 10px;
+}
+
+.faq-list__button {
+  padding: 14px 22px;
+  width: 100%;
+  cursor: pointer;
+  border: 1px solid $tab-border;
+  font-family: $font-family;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  text-align: center;
+  color: $primary-dark;
+
+  &--active {
+    border: none;
+    color: $white;
+    background: linear-gradient(100deg, $accent-bg 0%, #003eb7 100%);
+  }
+}
