@@ -1,10 +1,24 @@
 .juri {
   padding: 40px 15px;
+
+  @media (min-width: $tablet-width) {
+    padding: 30px 45px 60px;
+  }
 }
 
 .juri__title {
   margin: 0 0 20px;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 46px;
+  }
+}
+
+.juri__list  {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
 }
 
 .juri__image-wrapper {
@@ -35,5 +49,15 @@
 .juri__card {
   &:not(:first-child) {
     display: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    &:not(:first-child) {
+      display: block;
+    }
+
+    &:nth-child(n+3) {
+      display: none;
+    }
   }
 }
