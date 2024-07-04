@@ -4,6 +4,26 @@
 
   @media (min-width: $tablet-width) {
     padding: 60px 194px;
+    position: relative;
+    z-index: 1;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 325px;
+      height: 388px;
+      right: 0;
+      bottom: 0;
+      background-image: url("../../img/price/price-decoration-tablet.png");
+      background-repeat: no-repeat;
+      z-index: -1;
+    }
+  }
+}
+
+.price__container {
+  @media (min-width: $tablet-width) {
+    max-width: 380px;
   }
 }
 
