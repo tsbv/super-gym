@@ -1,0 +1,13 @@
+.nav__menu {
+  margin: 0 0 30px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px 35px;
+}
+
+.nav__link {
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 143%;
+  color: $white;
+}
