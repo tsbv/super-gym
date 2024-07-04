@@ -1,0 +1,31 @@
+.form {
+  padding: 70px 15px;
+  background-color: $primary-dark;
+}
+
+.form__title {
+  margin: 0 0 32px;
+  color: $white;
+}
+
+.form__label {
+  display: block;
+  margin: 0 0 36px;
+}
+
+.form__field {
+  /* padding: 4px 4px 4px 0; */
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid $divider;
+}
+
+.form__button {
+  width: 100%;
+  font-family: $font-family;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 100%;
+  text-transform: uppercase;
+  color: $white;
+}

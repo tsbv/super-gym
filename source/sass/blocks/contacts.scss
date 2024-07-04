@@ -1,0 +1,54 @@
+.contacts {
+  padding: 40px 15px;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 143%;
+  color: $primary-dark;
+}
+
+.contacts__title {
+  margin: 0 0 42px;
+}
+
+.contacts__list {
+  max-width: 170px;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.contacts__address {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 143%;
+  color: $primary-dark;
+}
+
+.contacts__item {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  font-size: 20px;
+  line-height: 100%;
+}
+
+.contacts__schedule {
+  margin: 0;
+  font-size: 14px;
+  line-height: 143%;
+  color: $primary-dark;
+}
+
+.contacts__phone {
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 143%;
+  color: $primary-dark;
+}
+
+.contacts__email {
+  text-decoration: none;
+  color: $primary-dark;
+  font-size: 14px;
+  line-height: 143%;
+}
