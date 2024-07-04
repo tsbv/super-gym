@@ -1,5 +1,6 @@
 .date-time {
   margin: 0;
+  position: relative;
   display: grid;
   grid-template-columns: 13px 43px;
   gap: 5px 3px;
@@ -7,6 +8,16 @@
   font-size: 16px;
   line-height: 125%;
   color: $white;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    top: 45%;
+    left: 0;
+    background-color: $white;
+  }
 }
 
 .date-time__number {
