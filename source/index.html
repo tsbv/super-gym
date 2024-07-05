@@ -297,7 +297,14 @@
           <h2 class="reviews__title title">Отзывы</h2>
           <ul class="reviews__list reset-list">
             <li class="reviews__item">
-              <img class="reviews__image" src="img/reviews/review-author-mobile.png" width="68" height="68" alt="Изображение автора отзыва Анна Орлова.">
+              <div class="reviews__image-wrapper">
+                <picture>
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/reviews/review-author-tablet.webp 1x, img/reviews/review-author-tablet@2x.webp 2x" width="80" height="80">
+                  <source type="image/webp" srcset="img/reviews/review-author-mobile.webp 1x, img/reviews/review-author-mobile@2x.webp 2x" width="68" height="68">
+                  <source type="image/jpeg" media="(min-width: 768px)" srcset="img/reviews/review-author-tablet.png, img/reviews/review-author-tablet@2x.png 2x" width="80" height="80">
+                  <img class="reviews__image" src="img/reviews/review-author-mobile.png" srcset="img/reviews/review-author-mobile@2x.png 2x" width="68" height="68" alt="Изображение автора отзыва Анна Орлова.">
+                </picture>
+              </div>
               <h3 class="reviews__name">Анна Орлова</h3>
               <p class="reviews__text">«Хожу в Supergym уже больше года. Нравится, что в клубе всегда чисто, тренажёры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
             </li>
