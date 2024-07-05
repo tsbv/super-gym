@@ -14,5 +14,9 @@
     line-height: 157%;
     color: $white;
     opacity: 0.4;
+
+    @media (min-width: $tablet-width) {
+      font-weight: 400;
+    }
   }
 }

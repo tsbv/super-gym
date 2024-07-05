@@ -1,16 +1,39 @@
 .form {
   padding: 70px 15px;
   background-color: $primary-dark;
+
+  @media (min-width: $tablet-width) {
+    padding: 60px 164px;
+  }
+}
+
+.form__container {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 205px 205px;
+    gap: 36px 30px;
+  }
 }
 
 .form__title {
   margin: 0 0 32px;
   color: $white;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    font-size: 54px;
+    grid-column: 1 / -1;
+    text-align: center;
+  }
 }
 
 .form__label {
   display: block;
   margin: 0 0 36px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
 }
 
 .form__field {
@@ -27,4 +50,8 @@
   line-height: 100%;
   text-transform: uppercase;
   color: $white;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 1 / -1;
+  }
 }
