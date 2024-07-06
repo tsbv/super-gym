@@ -1,5 +1,9 @@
 .features {
   padding: 40px 15px;
+
+  @media (min-width: $tablet-width) {
+    padding: 60px 45px;
+  }
 }
 
 .features__title {
@@ -11,6 +15,12 @@
   display: flex;
   flex-direction: column;
   gap: 35px;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 324px 324px;
+    gap: 40px 30px;
+  }
 }
 
 .features__definition {
@@ -24,6 +34,10 @@
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+
+  @media (min-width: $tablet-width) {
+    font-size: 70px;
+  }
 }
 
 .features__item {
@@ -38,6 +52,13 @@
     background-color: $btn-border;
     gap: 20px;
 
+    @media (min-width: $tablet-width) {
+      grid-column: 1 / -1;
+      max-width: 320px;
+      justify-self: center;
+      gap: 25px;
+    }
+
     .features__definition {
       background: none;
       color: $white;
@@ -51,6 +72,10 @@
       font-size: 22px;
       line-height: 100%;
       color: $white;
+
+      @media (min-width: $tablet-width) {
+        margin-top: 25px;
+      }
     }
 
     .features__text {
@@ -66,6 +91,11 @@
   font-size: 18px;
   line-height: 111%;
   color: $primary-dark;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 100%;
+  }
 }
 
 .features__term {
@@ -75,6 +105,10 @@
   font-size: 14px;
   line-height: 143%;
   color: $desc;
+
+  @media (min-width: $tablet-width) {
+    line-height: 157%;
+  }
 }
 
 .features__text {
@@ -84,4 +118,9 @@
   line-height: 157%;
   text-align: center;
   color: $primary-dark;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 150%;
+  }
 }
