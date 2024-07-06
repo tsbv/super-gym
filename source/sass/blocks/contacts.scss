@@ -32,6 +32,7 @@
     display: grid;
     grid-template-columns: 190px 190px;
     gap: 15px 60px;
+    justify-content: center;
 
     &::before {
       content: "";
