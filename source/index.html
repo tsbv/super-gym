@@ -229,28 +229,39 @@
         </div>
       </section>
       <section class="offers" data-test="offers">
-        <h2 class="offers__title title">Акции</h2>
-        <div class="promotion">
-          <div class="promotion__description-wrapper">
-            <p class="promotion__time">Год<span class="promotion__price">4999</span></p>
-            <p class="promotion__text">Безлимитный абонемент в тренажёрный зал</p>
-            <a class="promotion__link" href="#">подробнее</a>
+        <div class="offers__container container">
+          <h2 class="offers__title title">Акции</h2>
+          <div class="promotion">
+            <div class="promotion__description-wrapper">
+              <p class="promotion__time">Год<span class="promotion__price">4999</span></p>
+              <p class="promotion__text">Безлимитный абонемент в тренажёрный зал</p>
+              <a class="promotion__link" href="#">подробнее</a>
+            </div>
+            <div class="games__image-wrapper">
+              <picture>
+                <source type="image/webp" media="(min-width: 1366px)" srcset="img/offers/promotion-girl-desktop.webp 1x, img/offers/promotion-girl-desktop@2x.webp 2x" width="280" height="460">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/offers/promotion-girl-tablet.webp 1x, img/offers/promotion-girl-tablet@2x.webp 2x" width="400" height="462">
+                <source type="image/webp" srcset="img/offers/promotion-girl-mobile.webp 1x, img/offers/promotion-girl-mobile@2x.webp 2x" width="320" height="360">
+                <source type="image/jpeg" media="(min-width: 1366px)" srcset="img/offers/promotion-girl-desktop.jpg, img/offers/promotion-girl-desktop@2x.jpg 2x" width="280" height="460">
+                <source type="image/jpeg" media="(min-width: 768px)" srcset="img/offers/promotion-girl-tablet.jpg, img/offers/promotion-girl-tablet@2x.jpg 2x" width="400" height="462">
+                <img class="offers__image" src="img/offers/promotion-girl-mobile.jpg" srcset="img/offers/promotion-girl-mobile@2x.jpg 2x" width="320" height="360" alt="Спортивная девушка на голубом фоне.">
+              </picture>
+            </div>
           </div>
-          <img class="offers__image" src="img/offers/promotion-girl-mobile.jpg" width="320" height="360" alt="Спортивная девушка на голубом фоне.">
-        </div>
-        <div class="container">
-          <ul class="offers__list reset-list">
-            <li class="offer-card">
-              <h3 class="offer-card__name">Месяц бесплатно</h3>
-              <p class="offer-card__text">Приведи друга, получи абонемент в подарок</p>
-              <a class="offer-card__link" href="#">подробнее</a>
-            </li>
-            <li class="offer-card">
-              <h3 class="offer-card__name">Скидка 20%</h3>
-              <p class="offer-card__text">Корпоративный фитнес с командой</p>
-              <a class="offer-card__link" href="#">подробнее</a>
-            </li>
-          </ul>
+          <div class="container">
+            <ul class="offers__list reset-list">
+              <li class="offer-card">
+                <h3 class="offer-card__name">Месяц бесплатно</h3>
+                <p class="offer-card__text">Приведи друга, получи абонемент в подарок</p>
+                <a class="offer-card__link" href="#">подробнее</a>
+              </li>
+              <li class="offer-card">
+                <h3 class="offer-card__name">Скидка 20%</h3>
+                <p class="offer-card__text">Корпоративный фитнес с командой</p>
+                <a class="offer-card__link" href="#">подробнее</a>
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
       <section class="faq" data-test="faq">

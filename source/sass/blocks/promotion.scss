@@ -1,6 +1,17 @@
+.promotion {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 278px 400px;
+  }
+}
+
 .promotion__description-wrapper {
   padding: 30px;
   background-color: $play-btn;
+
+  @media (min-width: $tablet-width) {
+    padding: 40px 25px;
+  }
 }
 
 .promotion__time {
@@ -10,6 +21,11 @@
   font-size: 22px;
   line-height: 100%;
   color: $white;
+
+  @media (min-width: $tablet-width) {
+    text-align: start;
+    font-size: 24px;
+  }
 }
 
 .promotion__price {
@@ -17,6 +33,11 @@
   display: block;
   font-size: 64px;
   line-height: 100%;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 20px;
+    font-size: 70px;
+  }
 }
 
 .promotion__text {
@@ -26,6 +47,12 @@
   line-height: 125%;
   text-align: center;
   color: $white;
+
+  @media (min-width: $tablet-width) {
+    text-align: start;
+    font-size: 18px;
+    line-height: 133%;
+  }
 }
 
 .promotion__link {
@@ -40,4 +67,8 @@
   text-transform: uppercase;
   color: $white;
   border-bottom: 1px solid $white;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
 }

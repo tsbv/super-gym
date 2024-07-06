@@ -1,7 +1,26 @@
+.offers {
+  @media (min-width: $tablet-width) {
+    padding: 60px 45px;
+  }
+}
+
+.offers__container {
+  max-width: none;
+
+  @media (min-width: $tablet-width) {
+    max-width: 678px;
+  }
+}
+
 .offers__title {
   margin: 0 0 40px;
   padding: 0 15px;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 35px;
+    padding: 0;
+  }
 }
 
 .offers__image {
@@ -14,5 +33,11 @@
   display: flex;
   flex-direction: column;
   gap: 30px;
+
+  @media (min-width: $tablet-width) {
+    padding: 35px 0 0;
+    display: grid;
+    grid-template-columns: 324px 324px;
+  }
 }
 

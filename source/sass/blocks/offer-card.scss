@@ -1,5 +1,5 @@
 .offer-card {
-  padding: 20px;
+  padding: 34px;
   position: relative;
   background: linear-gradient(145deg, #d10a42 0%, #00359f 100%);
   display: flex;
@@ -19,6 +19,11 @@
     background-color: #ffffff;
     z-index: -1;
   }
+
+  @media (min-width: $tablet-width) {
+    align-items: normal;
+    gap: 0;
+  }
 }
 
 .offer-card__name {
@@ -27,6 +32,12 @@
   font-size: 22px;
   line-height: 100%;
   color: $btn-border;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 10px;
+    text-align: start;
+    font-size: 26px;
+  }
 }
 
 .offer-card__text {
@@ -36,6 +47,13 @@
   font-size: 14px;
   line-height: 157%;
   color: $btn-border;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 30px;
+    text-align: start;
+    font-size: 16px;
+    line-height: 150%;
+  }
 }
 
 .offer-card__link {
@@ -49,4 +67,8 @@
   text-transform: uppercase;
   color: $btn-border;
   border-bottom: 1px solid $divider;
+
+  @media (min-width: $tablet-width) {
+    margin-top: auto;
+  }
 }
