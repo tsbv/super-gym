@@ -9,6 +9,10 @@
 .features__title {
   margin: 0 0 40px;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 50px;
+  }
 }
 
 .features__list {
@@ -36,7 +40,10 @@
   -webkit-text-fill-color: transparent;
 
   @media (min-width: $tablet-width) {
+    max-width: 107px;
+    grid-row: 1 / -3;
     font-size: 70px;
+    text-align: start;
   }
 }
 
@@ -47,12 +54,20 @@
   align-items: center;
   gap: 12px;
 
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    gap: 15px;
+  }
+
   &--accent {
     padding: 30px 60px 40px;
     background-color: $btn-border;
     gap: 20px;
 
     @media (min-width: $tablet-width) {
+      display: flex;
+      flex-direction: column;
       grid-column: 1 / -1;
       max-width: 320px;
       justify-self: center;
@@ -80,6 +95,10 @@
 
     .features__text {
       color: $white;
+
+      @media (min-width: $tablet-width) {
+        text-align: center;
+      }
     }
   }
 }
@@ -120,6 +139,8 @@
   color: $primary-dark;
 
   @media (min-width: $tablet-width) {
+    grid-column: 2;
+    text-align: start;
     font-size: 16px;
     line-height: 150%;
   }
