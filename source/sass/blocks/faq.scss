@@ -1,8 +1,16 @@
 .faq {
   padding: 70px 15px;
   background-color: $primary-bg;
+
+  @media (min-width: $tablet-width) {
+    padding: 60px 45px;
+  }
 }
 
 .faq__title {
   margin: 0 0 35px;
+
+  @media (min-width: $tablet-width) {
+    text-align: center;
+  }
 }

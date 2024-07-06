@@ -3,6 +3,11 @@
   display: grid;
   grid-template-columns: 140px 140px;
   gap: 10px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 45px;
+    grid-template-columns: repeat(4, 162px);
+  }
 }
 
 .faq-list__button {
@@ -21,5 +26,10 @@
     border: none;
     color: $white;
     background: linear-gradient(100deg, $accent-bg 0%, #003eb7 100%);
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 17px;
+    font-size: 18px;
   }
 }
