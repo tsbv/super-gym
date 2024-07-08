@@ -7,7 +7,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 60px 103px;
+    background-color: transparent;
+    padding: 60px 0 60px;
   }
 }
 
@@ -20,6 +21,8 @@
   }
 
   @media (min-width: $desktop-width) {
+    margin: 0;
+    max-width: 477px;
     grid-template-columns: 223px 223px;
   }
 }
@@ -33,6 +36,10 @@
     font-size: 54px;
     grid-column: 1 / -1;
     text-align: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: start;
   }
 }
 

@@ -2,7 +2,17 @@
   padding: 0;
 
   @media (min-width: $desktop-width) {
+    background: linear-gradient(90deg, $primary-dark 50%, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 1) 100%);
+  }
+}
+
+.feedback__container {
+  max-width: none;
+
+  @media (min-width: $desktop-width) {
+    max-width: 1160px;
     display: grid;
-    grid-template-columns: 683px 683px;
+    grid-template-columns: 477px 477px;
+    gap: 206px;
   }
 }

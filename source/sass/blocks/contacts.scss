@@ -10,7 +10,14 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 60px 103px 71px;
+    padding: 60px 0 71px;
+  }
+}
+
+.contacts__container {
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    max-width: 477px;
   }
 }
 
