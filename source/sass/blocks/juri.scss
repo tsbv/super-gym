@@ -4,6 +4,10 @@
   @media (min-width: $tablet-width) {
     padding: 30px 45px 60px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 100px 103px;
+  }
 }
 
 .juri__title {
@@ -32,6 +36,7 @@
 .juri__name {
   margin: 0;
   position: absolute;
+  width: 100%;
   bottom: 25px;
   left: 50%;
   transform: translateX(-50%);
@@ -58,6 +63,12 @@
 
     &:nth-child(n+3) {
       display: none;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &:nth-child(n+3) {
+      display: block;
     }
   }
 }
