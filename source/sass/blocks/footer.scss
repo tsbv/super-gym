@@ -5,6 +5,10 @@
   @media (min-width: $tablet-width) {
     padding: 45px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 40px 103px;
+  }
 }
 
 .footer__container {
@@ -14,6 +18,10 @@
     justify-content: center;
     align-items: center;
     gap: 35px;
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 167px;
   }
 }
 
