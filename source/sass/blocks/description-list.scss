@@ -7,4 +7,9 @@
     position: relative;
     gap: 40px;
   }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: repeat(3, 360px);
+  }
 }

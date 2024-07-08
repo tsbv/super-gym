@@ -19,15 +19,31 @@
       z-index: -1;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 100px 103px;
+  }
 }
 
 .price__container {
   @media (min-width: $tablet-width) {
     max-width: 380px;
   }
+
+  @media (min-width: $desktop-width) {
+    max-width: 1160px;
+  }
 }
 
 .price__title {
   margin: 0 0 30px;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 35px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 20px;
+  }
 }
