@@ -5,6 +5,10 @@
   @media (min-width: $tablet-width) {
     padding: 60px 164px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 60px 103px;
+  }
 }
 
 .form__container {
@@ -13,6 +17,10 @@
     grid-template-columns: 205px 205px;
     gap: 36px 30px;
     justify-content: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 223px 223px;
   }
 }
 
