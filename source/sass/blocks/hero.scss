@@ -16,6 +16,12 @@
     grid-template-columns: 113px 185px 1fr;
     gap: 26px;
   }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 115px 270px 1fr;
+    gap: 0;
+    padding-left: 147px;
+  }
 }
 
 .hero__text {
@@ -49,6 +55,11 @@
     margin-top: 31px;
     font-size: 42px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 52px;
+    font-size: 54px;
+  }
 }
 
 .hero__title {
@@ -67,6 +78,11 @@
     font-size: 72px;
     line-height: 118%;
     letter-spacing: 0.03em;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 92px;
+    line-height: 120%;
   }
 }
 
