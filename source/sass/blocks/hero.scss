@@ -18,9 +18,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    grid-template-columns: 115px 270px 1fr;
+    grid-template-columns: 118px 270px 1fr;
     gap: 0;
-    padding-left: 147px;
+    padding: 0 72px 0 147px;
   }
 }
 
@@ -39,6 +39,11 @@
     grid-row: -4;
     grid-column: 1;
     line-height: 157%;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 71px;
+    max-width: 118px;
   }
 }
 
@@ -107,7 +112,11 @@
   text-align: center;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 31px;
+    margin: 0 0 31px;
     grid-column: 2;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 40px 0 0;
   }
 }
