@@ -4,12 +4,20 @@
   @media (min-width: $tablet-width) {
     padding: 60px 45px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 100px 103px;
+  }
 }
 
 .games__container {
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 300px 378px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 500px 660px;
   }
 }
 
@@ -24,6 +32,12 @@
     grid-template-columns: 100px 100px;
     gap: 10px 20px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 60px 80px 98px;
+    grid-template-columns: 168px 95px;
+    gap: 30px 77px;
+  }
 }
 
 .games__title {
@@ -35,6 +49,11 @@
   line-height: 112%;
   text-transform: uppercase;
   color: $white;
+
+  @media (min-width: $desktop-width) {
+    font-size: 82px;
+    line-height: 117%;
+  }
 }
 
 .games__text {
