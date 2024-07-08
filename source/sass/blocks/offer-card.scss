@@ -24,6 +24,11 @@
     align-items: normal;
     gap: 0;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 32px;
+  }
+
 }
 
 .offer-card__name {

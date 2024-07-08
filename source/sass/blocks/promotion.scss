@@ -3,6 +3,10 @@
     display: grid;
     grid-template-columns: 278px 400px;
   }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 280px 280px;
+  }
 }
 
 .promotion__description-wrapper {
@@ -11,6 +15,12 @@
 
   @media (min-width: $tablet-width) {
     padding: 40px 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 40px 45px;
+    display: flex;
+    flex-direction: column;
   }
 }
 
@@ -24,6 +34,10 @@
 
   @media (min-width: $tablet-width) {
     text-align: start;
+    font-size: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
     font-size: 24px;
   }
 }
@@ -70,5 +84,9 @@
 
   @media (min-width: $tablet-width) {
     margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: auto 0 0;
   }
 }
