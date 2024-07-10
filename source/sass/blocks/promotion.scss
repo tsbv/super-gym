@@ -15,12 +15,12 @@
 
   @media (min-width: $tablet-width) {
     padding: 40px 25px;
+    display: flex;
+    flex-direction: column;
   }
 
   @media (min-width: $desktop-width) {
     padding: 40px 45px;
-    display: flex;
-    flex-direction: column;
   }
 }
 
@@ -81,7 +81,6 @@
   line-height: 100%;
   text-transform: uppercase;
   color: $white;
-/*   border-bottom: 1px solid $white; */
 
   &::after {
     content: "";
@@ -95,10 +94,6 @@
   }
 
   @media (min-width: $tablet-width) {
-    margin: 0;
-  }
-
-  @media (min-width: $desktop-width) {
     margin: auto 0 0;
   }
 

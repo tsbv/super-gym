@@ -1,7 +1,7 @@
 .price-list {
   margin: 0 0 30px;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
   gap: 34px;
 
   @media (min-width: $tablet-width) {
@@ -16,8 +16,8 @@
 }
 
 .price-list__button {
-  font-family: $font-family;
   padding: 6px 0;
+  font-family: $font-family;
   font-size: 16px;
   line-height: 100%;
   color: $light;
