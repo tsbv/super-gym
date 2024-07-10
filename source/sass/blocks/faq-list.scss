@@ -8,6 +8,11 @@
     margin: 0 0 45px;
     grid-template-columns: repeat(4, 162px);
   }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .faq-list__button {

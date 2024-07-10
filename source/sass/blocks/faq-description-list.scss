@@ -56,6 +56,10 @@
     align-items: center;
     font-size: 22px;
   }
+
+  @media (min-width: $desktop-width) {
+    font-size: 24px;
+  }
 }
 
 .faq-description-list__break {
@@ -95,6 +99,10 @@
     max-width: 560px;
     font-size: 18px;
     line-height: 133%;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 660px;
   }
 }
 

@@ -5,12 +5,31 @@
   @media (min-width: $tablet-width) {
     padding: 60px 45px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 100px 103px;
+  }
+}
+
+.faq__container {
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 260px 860px;
+    gap: 50px 40px;
+  }
 }
 
 .faq__title {
   margin: 0 0 35px;
 
   @media (min-width: $tablet-width) {
+    margin: 0 0 45px;
     text-align: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    grid-column: 1 / -1;
+    text-align: start;
   }
 }
