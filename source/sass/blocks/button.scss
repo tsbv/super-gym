@@ -5,12 +5,62 @@
   &--light {
     padding: 22px;
     color: $white;
-    border: 2px solid $white;
+    box-shadow: inset 0 0 0 2px $white;
+
+    @media (hover: hover) {
+      &:hover {
+        color: $price;
+        background-color: $white;
+      }
+    }
+
+    &:focus {
+      outline: none;
+      background-color: rgba(255, 255, 255, 0.8);
+      color: $price;
+      box-shadow: inset 0 0 0 2px #000000;
+    }
+
+    &:active {
+      background-color: $white;
+      color: $primary-dark;
+    }
   }
 
   &--dark {
     padding: 22px;
     color: $primary-dark;
-    border: 2px solid $primary-dark;
+    box-shadow: inset 0 0 0 2px $primary-dark;
+
+    @media (hover: hover) {
+      &:hover {
+        color: $white;
+        box-shadow: none;
+        background: linear-gradient(151deg, $accent-bg 0%, #003eb7 100%);
+      }
+    }
+
+    &:focus {
+      outline: none;
+      background: linear-gradient(151deg, rgba(237, 2, 51, 0.8) 0%, rgba(0, 62, 183, 0.8) 100%);
+      box-shadow: inset 0 0 0 2px #000000;
+      color: $white;
+    }
+
+    &:active {
+      box-shadow: none;
+      background: linear-gradient(151deg, $accent-bg 0%, #003eb7 100%);
+      color: #deb9d0;
+    }
   }
+}
+
+.button--light.button--disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.button--dark.button--disabled {
+  opacity: 0.3;
+  pointer-events: none;
 }
