@@ -1,3 +1,8 @@
+.logo {
+  display: flex;
+  align-items: center;
+}
+
 .logo__image {
   @media (min-width: $tablet-width) {
     width: 110px;
