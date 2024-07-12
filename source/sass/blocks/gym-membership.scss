@@ -1,9 +1,38 @@
 .gym-membership {
   padding: 50px 42px;
   background-color: $white;
+  position: relative;
+
+  &::before {
+    content: none;
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    width: calc(100% - 16px);
+    height: calc(100% - 16px);
+    background-color: #ffffff;
+    z-index: -1;
+  }
 
   @media (min-width: $tablet-width) {
     padding: 65px;
+  }
+
+  @media (hover: hover) {
+    &:hover {
+      background: linear-gradient(151deg, $accent-bg 0%, #003eb7 100%);
+      z-index: 1;
+
+      &::before {
+        content: "";
+      }
+
+      .gym-membership__link {
+        color: $white;
+        box-shadow: none;
+        background: linear-gradient(151deg, $accent-bg 0%, #003eb7 100%);
+      }
+    }
   }
 }
 
