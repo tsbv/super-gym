@@ -15,6 +15,34 @@
   height: 25px;
   border-radius: 50%;
   background-color: $white;
+
+  @media (hover: hover) {
+    &:hover {
+      background-color: $divider;
+
+      .social__icon {
+        fill: $white;
+      }
+    }
+  }
+
+  &:focus {
+    outline: none;
+    background-color: $price;
+
+    .social__icon {
+      fill: $white;
+    }
+  }
+
+  &:active {
+    background-color: $primary-dark;
+  }
+}
+
+.social__link--disabled {
+  background-color: #d8dadf;
+  pointer-events: none;
 }
 
 .social__icon {
