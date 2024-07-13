@@ -1,5 +1,5 @@
 .field {
-  padding: 4px 4px 4px 0;
+  padding: 7px 4px 6px;
   background-color: transparent;
   font-family: $font-family;
   font-weight: 400;
@@ -17,6 +17,15 @@
 
     @media (min-width: $tablet-width) {
       font-weight: 400;
+    }
+  }
+
+  &:disabled {
+    opacity: 0.3;
+    pointer-events: none;
+
+    &::placeholder {
+      opacity: 0.4;
     }
   }
 }

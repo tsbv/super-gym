@@ -53,9 +53,27 @@
 }
 
 .form__field {
+  padding: 10px;
   width: 100%;
   border: none;
-  border-bottom: 1px solid $divider;
+  box-shadow: 0 1px 0 0 $divider;
+
+  @media (hover: hover) {
+    &:hover {
+      box-shadow: 0 1px 0 0 $white;
+    }
+  }
+
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 0 1px $white;
+  }
+
+  &:disabled {
+    &:hover {
+      box-shadow: 0 1px 0 0 $divider;
+    }
+  }
 }
 
 .form__button {
