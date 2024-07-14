@@ -9,6 +9,36 @@
   gap: 20px;
   z-index: 1;
 
+  h3 {
+    margin: 0;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 100%;
+    color: $btn-border;
+
+    @media (min-width: $tablet-width) {
+      margin: 0 0 10px;
+      text-align: start;
+      font-size: 26px;
+    }
+  }
+
+  p {
+    margin: 0;
+    text-align: center;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 157%;
+    color: $btn-border;
+
+    @media (min-width: $tablet-width) {
+      margin: 0 0 30px;
+      text-align: start;
+      font-size: 16px;
+      line-height: 150%;
+    }
+  }
+
   &::after {
     content: "";
     position: absolute;
@@ -27,37 +57,6 @@
 
   @media (min-width: $desktop-width) {
     padding: 32px;
-  }
-
-}
-
-.offer-card__name {
-  margin: 0;
-  font-weight: 700;
-  font-size: 22px;
-  line-height: 100%;
-  color: $btn-border;
-
-  @media (min-width: $tablet-width) {
-    margin: 0 0 10px;
-    text-align: start;
-    font-size: 26px;
-  }
-}
-
-.offer-card__text {
-  margin: 0;
-  text-align: center;
-  font-weight: 300;
-  font-size: 14px;
-  line-height: 157%;
-  color: $btn-border;
-
-  @media (min-width: $tablet-width) {
-    margin: 0 0 30px;
-    text-align: start;
-    font-size: 16px;
-    line-height: 150%;
   }
 }
 
