@@ -69,6 +69,10 @@
     &:nth-child(n+3) {
       display: block;
     }
+
+    &:nth-child(n+5) {
+      display: none;
+    }
   }
 
   @media (hover: hover) {
