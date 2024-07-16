@@ -28,6 +28,7 @@
 @import "./blocks/faq-list";
 @import "./blocks/faq-description-list";
 @import "./blocks/reviews";
+@import "./blocks/review-card";
 @import "./blocks/feedback";
 @import "./blocks/form";
 @import "./blocks/field";
@@ -38,5 +39,5 @@
 @import "./blocks/swiper";
 
 /* Libraries */
-/* @import "./vendor/swiper.min.css"
- */
+@import "./vendor/swiper-bundle.min.css"
+

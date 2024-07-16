@@ -2,6 +2,7 @@ import Swiper from 'swiper';
 import 'swiper/css';
 import { Navigation } from 'swiper/modules';
 
+/* Загрузка видео */
 const video = document.querySelector('.video');
 const src = video.dataset.src;
 video.addEventListener('click', () => {
@@ -19,11 +20,11 @@ priceElements.forEach((priceElement) => {
   priceElement.style.setProperty('--price-shadow', `"${price}"`);
 });
 
+/* Слайдер отзывов */
 const swiper = new Swiper('.swiper', {
-  // Optional parameters
   modules: [Navigation],
+  slidesPerView: 1,
   loop: true,
-  // Navigation arrows
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',

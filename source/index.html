@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Drink2Go — интернет-магазин по продаже кофейных напитков.">
     <title>SUPERGYM</title>
-    <link rel="stylesheet" href="sass/vendor/swiper.min.css">
+<!--     <link rel="stylesheet" href="sass/vendor/swiper-bundle.min.css"> -->
     <link rel="stylesheet" href="sass/style.scss">
   </head>
   <body class="page__body">
@@ -360,85 +360,51 @@
         </div>
       </section>
       <section class="reviews" data-test="reviews">
-        <div class="container">
+        <div class="reviews__container container">
           <h2 class="reviews__title title">Отзывы</h2>
-<!--           <ul class="reviews__list reset-list">
-            <li class="reviews__item">
-              <div>
-                <picture>
-                  <source type="image/webp" media="(min-width: 768px)" srcset="img/reviews/review-author-tablet.webp 1x, img/reviews/review-author-tablet@2x.webp 2x" width="80" height="80">
-                  <source type="image/webp" srcset="img/reviews/review-author-mobile.webp 1x, img/reviews/review-author-mobile@2x.webp 2x" width="68" height="68">
-                  <source type="image/jpeg" media="(min-width: 768px)" srcset="img/reviews/review-author-tablet.png, img/reviews/review-author-tablet@2x.png 2x" width="80" height="80">
-                  <img src="img/reviews/review-author-mobile.png" srcset="img/reviews/review-author-mobile@2x.png 2x" width="68" height="68" alt="Изображение автора отзыва Анна Орлова.">
-                </picture>
-              </div>
-              <h3>Анна Орлова</h3>
-              <p>«Хожу в Supergym уже больше года. Нравится, что в клубе всегда чисто, тренажёры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
-            </li>
-            <li class="reviews__item">
-              <div>
-                <picture>
-                  <source type="image/webp" media="(min-width: 768px)" srcset="img/reviews/review-author-tablet.webp 1x, img/reviews/review-author-tablet@2x.webp 2x" width="80" height="80">
-                  <source type="image/webp" srcset="img/reviews/review-author-mobile.webp 1x, img/reviews/review-author-mobile@2x.webp 2x" width="68" height="68">
-                  <source type="image/jpeg" media="(min-width: 768px)" srcset="img/reviews/review-author-tablet.png, img/reviews/review-author-tablet@2x.png 2x" width="80" height="80">
-                  <img src="img/reviews/review-author-mobile.png" srcset="img/reviews/review-author-mobile@2x.png 2x" width="68" height="68" alt="Изображение автора отзыва Анна Орлова.">
-                </picture>
-              </div>
-              <h3>Алиса Пепел</h3>
-              <p>«Хожу в Supergym уже больше года. Нравится, что в клубе всегда чисто, тренажёры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
-            </li>
-            <li class="reviews__item">
-              <div>
-                <picture>
-                  <source type="image/webp" media="(min-width: 768px)" srcset="img/reviews/review-author-tablet.webp 1x, img/reviews/review-author-tablet@2x.webp 2x" width="80" height="80">
-                  <source type="image/webp" srcset="img/reviews/review-author-mobile.webp 1x, img/reviews/review-author-mobile@2x.webp 2x" width="68" height="68">
-                  <source type="image/jpeg" media="(min-width: 768px)" srcset="img/reviews/review-author-tablet.png, img/reviews/review-author-tablet@2x.png 2x" width="80" height="80">
-                  <img src="img/reviews/review-author-mobile.png" srcset="img/reviews/review-author-mobile@2x.png 2x" width="68" height="68" alt="Изображение автора отзыва Анна Орлова.">
-                </picture>
-              </div>
-              <h3>Ронда Раузи</h3>
-              <p>«Хожу в Supergym уже больше года. Нравится, что в клубе всегда чисто, тренажёры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
-            </li>
-          </ul> -->
           <div class="swiper">
-            <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
-              <!-- Slides -->
               <div class="swiper-slide">
-                <div>
-                  <picture>
-                    <source type="image/webp" media="(min-width: 768px)" srcset="img/reviews/review-author-tablet.webp 1x, img/reviews/review-author-tablet@2x.webp 2x" width="80" height="80">
-                    <source type="image/webp" srcset="img/reviews/review-author-mobile.webp 1x, img/reviews/review-author-mobile@2x.webp 2x" width="68" height="68">
-                    <source type="image/jpeg" media="(min-width: 768px)" srcset="img/reviews/review-author-tablet.png, img/reviews/review-author-tablet@2x.png 2x" width="80" height="80">
-                    <img src="img/reviews/review-author-mobile.png" srcset="img/reviews/review-author-mobile@2x.png 2x" width="68" height="68" alt="Изображение автора отзыва Анна Орлова.">
-                  </picture>
+                <div class="review-card">
+                  <div>
+                    <picture>
+                      <source type="image/webp" media="(min-width: 768px)" srcset="img/reviews/review-author-tablet.webp 1x, img/reviews/review-author-tablet@2x.webp 2x" width="80" height="80">
+                      <source type="image/webp" srcset="img/reviews/review-author-mobile.webp 1x, img/reviews/review-author-mobile@2x.webp 2x" width="68" height="68">
+                      <source type="image/jpeg" media="(min-width: 768px)" srcset="img/reviews/review-author-tablet.png, img/reviews/review-author-tablet@2x.png 2x" width="80" height="80">
+                      <img src="img/reviews/review-author-mobile.png" srcset="img/reviews/review-author-mobile@2x.png 2x" width="68" height="68" alt="Изображение автора отзыва Анна Орлова.">
+                    </picture>
+                  </div>
+                  <h3>Анна Орлова</h3>
+                  <p>«Хожу в Supergym уже больше года. Нравится, что в клубе всегда чисто, тренажёры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
                 </div>
-                <h3>Анна Орлова</h3>
-                <p>«Хожу в Supergym уже больше года. Нравится, что в клубе всегда чисто, тренажёры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
               </div>
               <div class="swiper-slide">
-                <div>
-                  <picture>
-                    <source type="image/webp" media="(min-width: 768px)" srcset="img/reviews/review-author-tablet.webp 1x, img/reviews/review-author-tablet@2x.webp 2x" width="80" height="80">
-                    <source type="image/webp" srcset="img/reviews/review-author-mobile.webp 1x, img/reviews/review-author-mobile@2x.webp 2x" width="68" height="68">
-                    <source type="image/jpeg" media="(min-width: 768px)" srcset="img/reviews/review-author-tablet.png, img/reviews/review-author-tablet@2x.png 2x" width="80" height="80">
-                    <img src="img/reviews/review-author-mobile.png" srcset="img/reviews/review-author-mobile@2x.png 2x" width="68" height="68" alt="Изображение автора отзыва Анна Орлова.">
-                  </picture>
+                <div class="review-card">
+                  <div>
+                    <picture>
+                      <source type="image/webp" media="(min-width: 768px)" srcset="img/reviews/review-author-tablet.webp 1x, img/reviews/review-author-tablet@2x.webp 2x" width="80" height="80">
+                      <source type="image/webp" srcset="img/reviews/review-author-mobile.webp 1x, img/reviews/review-author-mobile@2x.webp 2x" width="68" height="68">
+                      <source type="image/jpeg" media="(min-width: 768px)" srcset="img/reviews/review-author-tablet.png, img/reviews/review-author-tablet@2x.png 2x" width="80" height="80">
+                      <img src="img/reviews/review-author-mobile.png" srcset="img/reviews/review-author-mobile@2x.png 2x" width="68" height="68" alt="Изображение автора отзыва Анна Орлова.">
+                    </picture>
+                  </div>
+                  <h3>Алиса Пепел</h3>
+                  <p>«Хожу в Supergym уже больше года. Нравится, что в клубе всегда чисто, тренажёры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
                 </div>
-                <h3>Алиса Пепел</h3>
-                <p>«Хожу в Supergym уже больше года. Нравится, что в клубе всегда чисто, тренажёры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
               </div>
               <div class="swiper-slide">
-                <div>
-                  <picture>
-                    <source type="image/webp" media="(min-width: 768px)" srcset="img/reviews/review-author-tablet.webp 1x, img/reviews/review-author-tablet@2x.webp 2x" width="80" height="80">
-                    <source type="image/webp" srcset="img/reviews/review-author-mobile.webp 1x, img/reviews/review-author-mobile@2x.webp 2x" width="68" height="68">
-                    <source type="image/jpeg" media="(min-width: 768px)" srcset="img/reviews/review-author-tablet.png, img/reviews/review-author-tablet@2x.png 2x" width="80" height="80">
-                    <img src="img/reviews/review-author-mobile.png" srcset="img/reviews/review-author-mobile@2x.png 2x" width="68" height="68" alt="Изображение автора отзыва Анна Орлова.">
-                  </picture>
+                <div class="review-card">
+                  <div>
+                    <picture>
+                      <source type="image/webp" media="(min-width: 768px)" srcset="img/reviews/review-author-tablet.webp 1x, img/reviews/review-author-tablet@2x.webp 2x" width="80" height="80">
+                      <source type="image/webp" srcset="img/reviews/review-author-mobile.webp 1x, img/reviews/review-author-mobile@2x.webp 2x" width="68" height="68">
+                      <source type="image/jpeg" media="(min-width: 768px)" srcset="img/reviews/review-author-tablet.png, img/reviews/review-author-tablet@2x.png 2x" width="80" height="80">
+                      <img src="img/reviews/review-author-mobile.png" srcset="img/reviews/review-author-mobile@2x.png 2x" width="68" height="68" alt="Изображение автора отзыва Анна Орлова.">
+                    </picture>
+                  </div>
+                  <h3>Ронда Раузи</h3>
+                  <p>«Хожу в Supergym уже больше года. Нравится, что в клубе всегда чисто, тренажёры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
                 </div>
-                <h3>Ронда Раузи</h3>
-                <p>«Хожу в Supergym уже больше года. Нравится, что в клубе всегда чисто, тренажёры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
               </div>
             </div>
             <!-- If we need navigation buttons -->
@@ -541,7 +507,7 @@
         </ul>
       </div>
     </footer>
-    <script src="js/vendor/swiper.min.js"></script>
+    <script src="js/vendor/swiper-bundle.min.js"></script>
     <script src="js/main.js" type="module"></script>
   </body>
 </html>
