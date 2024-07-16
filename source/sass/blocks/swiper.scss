@@ -13,7 +13,7 @@
   background-size: 16px 32px;
 
   @media (min-width: $tablet-width) {
-    display: block;
+    display: flex;
   }
 
   &::after {
@@ -21,10 +21,16 @@
     display: block;
     width: 16px;
     height: 32px;
-    mask-image: url("/__spritemap#slider-arrow-icon");
-    mask-size: 16px 32px;
+    mask-image: url("/__spritemap#sprite-arrow-view");
+    mask-size: 16px 31px;
     mask-repeat: no-repeat;
     mask-position: center;
     background-color: $primary-dark;
+  }
+}
+
+.swiper-button-next {
+  &::after {
+    transform: rotate(180deg);
   }
 }
