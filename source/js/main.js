@@ -1,7 +1,7 @@
-// https://swiperjs.com/get-started#installation
-// import Swiper from "swiper";
-// import {Navigation, Pagination} from "swiper/modules";
-// import 'swiper/css';
+import Swiper from 'swiper';
+import 'swiper/css';
+import { Navigation } from 'swiper/modules';
+
 const video = document.querySelector('.video');
 const src = video.dataset.src;
 video.addEventListener('click', () => {
@@ -17,4 +17,15 @@ const priceElements = document.querySelectorAll('.gym-membership__price');
 priceElements.forEach((priceElement) => {
   const price = priceElement.textContent.trim();
   priceElement.style.setProperty('--price-shadow', `"${price}"`);
+});
+
+const swiper = new Swiper('.swiper', {
+  // Optional parameters
+  modules: [Navigation],
+  loop: true,
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
 });
