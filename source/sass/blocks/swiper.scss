@@ -17,14 +17,14 @@
   }
 
   &::after {
-    display: none;
+    content: "";
+    display: block;
+    width: 16px;
+    height: 32px;
+    mask-image: url("/__spritemap#slider-arrow-icon");
+    mask-size: 16px 32px;
+    mask-repeat: no-repeat;
+    mask-position: center;
+    background-color: $primary-dark;
   }
 }
-
-/* .swiper-button-prev {
-  background-image: url("");
-}
-
-.swiper-button-next {
-  background-image: url("");
-} */
