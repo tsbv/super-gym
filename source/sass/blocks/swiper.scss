@@ -1,6 +1,19 @@
+.swiper-container {
+  position: relative;
+}
+
+.swiper-container .swiper1 {
+  position: static;
+}
+
 .swiper {
   width: 100%;
   height: 100%;
+}
+
+.swiper1 {
+  overflow: hidden;
+  position: relative;
 }
 
 .swiper-button-prev,
@@ -62,6 +75,18 @@
       border: none;
       cursor: auto;
     }
+  }
+}
+
+.swiper1 .swiper-button-prev {
+  left: -70px;
+}
+
+.swiper1 .swiper-button-next {
+  right: -70px;
+
+  &::after {
+    transform: rotate(180deg);
   }
 }
 

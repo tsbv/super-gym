@@ -21,9 +21,38 @@ priceElements.forEach((priceElement) => {
 });
 
 /* Слайдер отзывов */
-const swiper = new Swiper('.swiper', {
+const slider = document.querySelector('.swiper');
+const slider1 = document.querySelector('.swiper1');
+const swiper = new Swiper(slider, {
   modules: [Navigation],
   slidesPerView: 1,
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});
+
+const swiper1 = new Swiper(slider1, {
+  modules: [Navigation],
+  slidesPerView: 4,
+  spaceBetween: 40,
+  slidesPerGroup: 4,
+  loop: true,
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 40,
+      slidesPerGroup: 1
+    },
+    768: {
+      slidesPerView: 2,
+      slidesPerGroup: 2
+    },
+    1366: {
+      slidesPerView: 4,
+      slidesPerGroup: 4
+    }
+  },
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
