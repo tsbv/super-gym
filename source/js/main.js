@@ -24,7 +24,6 @@ priceElements.forEach((priceElement) => {
 const swiper = new Swiper('.swiper', {
   modules: [Navigation],
   slidesPerView: 1,
-  loop: true,
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',

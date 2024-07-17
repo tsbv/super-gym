@@ -55,6 +55,7 @@
     &::after {
       background-color: rgba(16, 38, 84, 0.3);
       pointer-events: none;
+      opacity: 0.9;
     }
 
     &:hover {
@@ -68,4 +69,11 @@
   &::after {
     transform: rotate(180deg);
   }
+}
+
+.swiper-button-next.swiper-button-disabled,
+.swiper-button-prev.swiper-button-disabled {
+  opacity: 0.3;
+  cursor: auto;
+  pointer-events: none;
 }
