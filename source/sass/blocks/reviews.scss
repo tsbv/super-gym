@@ -11,8 +11,12 @@
 }
 
 .reviews__container {
+  @media (min-width: $tablet-width) {
+    max-width: 500px;
+  }
+
   @media (min-width: $desktop-width) {
-    max-width: 768px;
+    max-width: 560px;
   }
 }
 

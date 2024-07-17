@@ -26,6 +26,7 @@ const slider1 = document.querySelector('.swiper1');
 const swiper = new Swiper(slider, {
   modules: [Navigation],
   slidesPerView: 1,
+  spaceBetween: 40,
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
