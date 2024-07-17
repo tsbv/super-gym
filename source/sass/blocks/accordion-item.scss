@@ -1,0 +1,141 @@
+.accordion-item {
+  padding: 20px 0;
+  border-top: 1px solid $divider;
+
+  &:last-child {
+    border-bottom: 1px solid $divider;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 23px 0;
+  }
+
+  button {
+    padding: 0;
+    position: relative;
+    display: block;
+    text-align: left;
+    width: 100%;
+    color: $primary-dark;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+  }
+
+  .accordion-item__icon {
+    display: inline-block;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    border: 1px solid $btn-border;
+    border-radius: 15px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: 14px;
+      height: 1px;
+      display: block;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: currentColor;
+
+      @media (min-width: $tablet-width) {
+        width: 20px;
+      }
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      display: block;
+      width: 1px;
+      height: 14px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: currentColor;
+
+      @media (min-width: $tablet-width) {
+        height: 20px;
+      }
+    }
+
+    @media (min-width: $tablet-width) {
+      width: 40px;
+      height: 40px;
+      border-radius: 20px;
+    }
+  }
+
+  button[aria-expanded='true'] {
+    .accordion-item__icon {
+      &::after {
+        width: 0;
+      }
+    }
+
+    + p {
+      margin: 20px 0 0;
+      max-height: 100%;
+      opacity: 1;
+      transition: all 200ms linear;
+      will-change: opacity, max-height, margin;
+
+      @media (min-width: $tablet-width) {
+        margin: 10px 0 0;
+      }
+    }
+  }
+
+  span {
+    margin: 0;
+    max-width: 238px;
+    cursor: pointer;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 100%;
+    color: $primary-dark;
+
+    @media (min-width: $tablet-width) {
+      max-width: 560px;
+      min-height: 40px;
+      display: flex;
+      align-items: center;
+      font-size: 22px;
+    }
+
+    @media (min-width: $desktop-width) {
+      max-width: 660px;
+      font-size: 24px;
+    }
+  }
+
+  p {
+    margin: 0;
+    max-width: 238px;
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: opacity 200ms linear, max-height 200ms linear, margin 200ms linear;
+    will-change: opacity, max-height, margin;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 125%;
+    color: $primary-dark;
+
+    @media (min-width: $tablet-width) {
+      max-width: 560px;
+      font-size: 18px;
+      line-height: 133%;
+    }
+
+    @media (min-width: $desktop-width) {
+      max-width: 660px;
+    }
+  }
+}
