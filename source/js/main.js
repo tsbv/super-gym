@@ -32,7 +32,7 @@ const swiper = new Swiper(slider, {
     prevEl: '.swiper-button-prev',
   },
 });
-
+swiper.update();
 const swiper1 = new Swiper(slider1, {
   modules: [Navigation],
   slidesPerView: 4,
@@ -59,6 +59,7 @@ const swiper1 = new Swiper(slider1, {
     prevEl: '.swiper-button-prev',
   },
 });
+swiper1.update();
 
 /* Аккордеоны */
 const items = document.querySelectorAll('.accordion button');
