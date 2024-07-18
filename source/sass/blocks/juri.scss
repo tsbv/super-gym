@@ -81,8 +81,21 @@
 }
 
 .juri__info-item {
+  padding-left: 16px;
+  position: relative;
   font-weight: 400;
   font-size: 14px;
   line-height: 157%;
   color: $white;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    top: 8px;
+    left: 0;
+    background-color: $white;
+    border-radius: 100%;
+  }
 }
