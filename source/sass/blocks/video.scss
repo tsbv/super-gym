@@ -56,8 +56,8 @@
         outline: 2px solid rgba(16, 38, 84, 0.6);
       }
 
-      .video__play-icon {
-        fill: rgba(16, 38, 84, 0.6);
+      .video__icon {
+        background-color: rgba(16, 38, 84, 0.6);
       }
     }
   }
@@ -70,8 +70,8 @@
       outline: 2px solid $primary-dark;
     }
 
-    .video__play-icon {
-      fill: $primary-dark;
+    .video__icon {
+      background-color: $primary-dark;
     }
   }
 
@@ -85,21 +85,28 @@
   }
 }
 
+.video__icon {
+  position: absolute;
+  display: block;
+  width: 9px;
+  height: 12px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: $white;
+  mask-image: url("/__spritemap#sprite-play-view");
+  mask-size: 9px 12px;
+  mask-repeat: no-repeat;
+  mask-position: center;
+  z-index: 1;
+}
+
 .video__iframe {
   position: absolute;
   inset: 0;
   width: 100%;
   height: 100%;
   z-index: 2;
-}
-
-.video__play-icon {
-  fill: $white;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 1;
 }
 
 .video--disabled {
@@ -111,8 +118,8 @@
     opacity: 0.4;
   }
 
-  .video__play-icon {
-    fill: $primary-dark;
+  .video__icon {
+    background-color: $primary-dark;
     opacity: 0.4;
   }
 }
