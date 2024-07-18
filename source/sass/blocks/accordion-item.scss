@@ -94,8 +94,10 @@
 
   span {
     margin: 0;
+    display: block;
     max-width: 238px;
     cursor: pointer;
+    font-family: $font-family;
     font-weight: 400;
     font-size: 20px;
     line-height: 100%;
