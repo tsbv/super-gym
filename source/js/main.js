@@ -176,6 +176,7 @@ const phoneError = form.querySelector('.form__error--phone');
 const validateInput = (input, regex, error) => {
   const isValid = regex.test(input.value);
   error.style.display = isValid ? 'none' : 'block';
+  input.classList.toggle('form__field--error', !isValid);
   return isValid;
 };
 form.addEventListener('submit', (event) => {
