@@ -39,55 +39,49 @@
     background-color: $primary-dark;
   }
 
-  &--vk {
-    &::before {
-      content: "";
-      position: absolute;
-      width: 12px;
-      height: 7px;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      mask-image: url("/__spritemap#sprite-vk-view");
-      mask-size: 12px 7px;
-      mask-repeat: no-repeat;
-      mask-position: center;
-      background-color: $dark;
-    }
+  &--vk::before {
+    content: "";
+    position: absolute;
+    width: 12px;
+    height: 7px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    mask-image: url("/__spritemap#sprite-vk-view");
+    mask-size: 12px 7px;
+    mask-repeat: no-repeat;
+    mask-position: center;
+    background-color: $dark;
   }
 
-  &--ok {
-    &::before {
-      content: "";
-      position: absolute;
-      width: 9px;
-      height: 16px;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      mask-image: url("/__spritemap#sprite-ok-view");
-      mask-size: 9px 16px;
-      mask-repeat: no-repeat;
-      mask-position: center;
-      background-color: $dark;
-    }
+  &--ok::before {
+    content: "";
+    position: absolute;
+    width: 9px;
+    height: 16px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    mask-image: url("/__spritemap#sprite-ok-view");
+    mask-size: 9px 16px;
+    mask-repeat: no-repeat;
+    mask-position: center;
+    background-color: $dark;
   }
 
-  &--reddit {
-    &::before {
-      content: "";
-      position: absolute;
-      width: 14px;
-      height: 14px;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      mask-image: url("/__spritemap#sprite-reddit-view");
-      mask-size: 14px 14px;
-      mask-repeat: no-repeat;
-      mask-position: center;
-      background-color: $dark;
-    }
+  &--reddit::before {
+    content: "";
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    mask-image: url("/__spritemap#sprite-reddit-view");
+    mask-size: 14px 14px;
+    mask-repeat: no-repeat;
+    mask-position: center;
+    background-color: $dark;
   }
 }
 

@@ -143,64 +143,64 @@
       align-self: flex-start;
     }
   }
+}
 
-  &--accent {
-    padding: 30px 60px 40px;
-    background-color: $btn-border;
-    gap: 20px;
+.features__item--accent {
+  padding: 30px 60px 40px;
+  background-color: $btn-border;
+  gap: 20px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    grid-column: 1 / -1;
+    max-width: 320px;
+    justify-self: center;
+    gap: 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 58px 40px;
+
+    gap: 30px;
+  }
+
+  div {
+    max-width: 114px;
+    background: none;
+    color: $white;
+    background-clip: unset;
+    -webkit-text-fill-color: unset;
 
     @media (min-width: $tablet-width) {
-      display: flex;
-      flex-direction: column;
-      grid-column: 1 / -1;
-      max-width: 320px;
-      justify-self: center;
-      gap: 25px;
+      max-width: 135px;
+      text-align: center;
+    }
+  }
+
+  h3 {
+    margin-top: 5px;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 100%;
+    color: $white;
+
+    @media (min-width: $tablet-width) {
+      margin-top: 25px;
+      font-size: 24px;
     }
 
     @media (min-width: $desktop-width) {
-      padding: 58px 40px;
-
-      gap: 30px;
+      margin-top: 10px;
+      font-size: 26px;
     }
+  }
 
-    div {
-      max-width: 114px;
-      background: none;
-      color: $white;
-      background-clip: unset;
-      -webkit-text-fill-color: unset;
+  p {
+    color: $white;
 
-      @media (min-width: $tablet-width) {
-        max-width: 135px;
-        text-align: center;
-      }
-    }
-
-    h3 {
-      margin-top: 5px;
-      font-weight: 700;
-      font-size: 22px;
-      line-height: 100%;
-      color: $white;
-
-      @media (min-width: $tablet-width) {
-        margin-top: 25px;
-        font-size: 24px;
-      }
-
-      @media (min-width: $desktop-width) {
-        margin-top: 10px;
-        font-size: 26px;
-      }
-    }
-
-    p {
-      color: $white;
-
-      @media (min-width: $tablet-width) {
-        text-align: center;
-      }
+    @media (min-width: $tablet-width) {
+      text-align: center;
     }
   }
 }

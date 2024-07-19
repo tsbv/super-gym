@@ -22,82 +22,6 @@
     cursor: pointer;
   }
 
-  .accordion-item__icon {
-    display: inline-block;
-    position: absolute;
-    width: 30px;
-    height: 30px;
-    top: 50%;
-    right: 0;
-    transform: translateY(-50%);
-    border: 1px solid $btn-border;
-    border-radius: 15px;
-
-    &::before {
-      content: "";
-      position: absolute;
-      width: 14px;
-      height: 1px;
-      display: block;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      background-color: currentColor;
-
-      @media (min-width: $tablet-width) {
-        width: 20px;
-      }
-    }
-
-    &::after {
-      content: "";
-      position: absolute;
-      display: block;
-      width: 1px;
-      height: 14px;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      background-color: currentColor;
-
-      @media (min-width: $tablet-width) {
-        height: 20px;
-      }
-    }
-
-    @media (min-width: $tablet-width) {
-      width: 40px;
-      height: 40px;
-      border-radius: 20px;
-    }
-  }
-
-  button[aria-expanded="true"] {
-    .accordion-item__icon {
-      border: none;
-      background-color: $btn-border;
-
-      &::before {
-        background-color: $white;
-      }
-
-      &::after {
-        width: 0;
-      }
-    }
-
-    + p {
-      margin: 20px 0 0;
-      max-height: 100%;
-      opacity: 1;
-      transition: all 200ms linear;
-      will-change: opacity, max-height, margin;
-
-      @media (min-width: $tablet-width) {
-        margin: 10px 0 0;
-      }
-    }
-  }
 
   span {
     margin: 0;
@@ -145,6 +69,83 @@
 
     @media (min-width: $desktop-width) {
       max-width: 660px;
+    }
+  }
+}
+
+.accordion-item .accordion-item__icon {
+  display: inline-block;
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  border: 1px solid $btn-border;
+  border-radius: 15px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 14px;
+    height: 1px;
+    display: block;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: currentColor;
+
+    @media (min-width: $tablet-width) {
+      width: 20px;
+    }
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 1px;
+    height: 14px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: currentColor;
+
+    @media (min-width: $tablet-width) {
+      height: 20px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+  }
+}
+
+.accordion-item button[aria-expanded=true] {
+  .accordion-item__icon {
+    border: none;
+    background-color: $btn-border;
+  }
+
+  .accordion-item__icon::before {
+    background-color: $white;
+  }
+
+  .accordion-item__icon::after {
+    width: 0;
+  }
+
+  + p {
+    margin: 20px 0 0;
+    max-height: 100%;
+    opacity: 1;
+    transition: all 200ms linear;
+    will-change: opacity, max-height, margin;
+
+    @media (min-width: $tablet-width) {
+      margin: 10px 0 0;
     }
   }
 }
