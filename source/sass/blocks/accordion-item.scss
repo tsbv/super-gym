@@ -10,7 +10,7 @@
     padding: 23px 0;
   }
 
-  button {
+  .accordion-item__button {
     padding: 0;
     position: relative;
     display: block;
@@ -21,7 +21,6 @@
     background-color: transparent;
     cursor: pointer;
   }
-
 
   span {
     margin: 0;
@@ -123,7 +122,7 @@
   }
 }
 
-.accordion-item button[aria-expanded=true] {
+.accordion-item .accordion-item__button.is-expanded {
   .accordion-item__icon {
     border: none;
     background-color: $btn-border;

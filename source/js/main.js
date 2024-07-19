@@ -63,14 +63,16 @@ swiper1.update();
 
 /* Аккордеоны */
 const items = document.querySelectorAll('.accordion button');
+const allParagraphs = document.querySelectorAll('.accordion-item p');
 function toggleAccordion() {
-  const itemToggle = this.getAttribute('aria-expanded');
-  if (itemToggle === 'false') {
-    this.setAttribute('aria-expanded', 'true');
-  } else {
-    this.setAttribute('aria-expanded', 'false');
+  const paragraph = this.nextElementSibling;
+  this.classList.toggle('is-expanded');
+  allParagraphs.forEach((p) => p.setAttribute('aria-hidden', 'true'));
+  if (this.classList.contains('is-expanded')) {
+    paragraph.setAttribute('aria-hidden', 'false');
   }
 }
+items[0].classList.add('is-expanded');
 items.forEach((item) => item.addEventListener('click', toggleAccordion));
 
 /* Табы с ценами абонементов */
