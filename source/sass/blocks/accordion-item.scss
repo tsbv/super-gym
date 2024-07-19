@@ -201,14 +201,14 @@
   @media (hover: hover) {
     &:hover {
       .accordion-item__icon {
-        background-color: $divider;
+        opacity: 0.9;
       }
     }
   }
 
   &:focus {
     .accordion-item__icon {
-      background-color: $divider;
+      opacity: 0.9;
     }
   }
 }
