@@ -66,13 +66,13 @@ const items = document.querySelectorAll('.accordion button');
 const allParagraphs = document.querySelectorAll('.accordion-item p');
 function toggleAccordion() {
   const paragraph = this.nextElementSibling;
-  this.classList.toggle('is-expanded');
+  this.classList.toggle('accordion-item__button--active');
   allParagraphs.forEach((p) => p.setAttribute('aria-hidden', 'true'));
-  if (this.classList.contains('is-expanded')) {
+  if (this.classList.contains('accordion-item__button--active')) {
     paragraph.setAttribute('aria-hidden', 'false');
   }
 }
-items[0].classList.add('is-expanded');
+items[0].classList.add('accordion-item__button--active');
 items.forEach((item) => item.addEventListener('click', toggleAccordion));
 
 /* Табы с ценами абонементов */
