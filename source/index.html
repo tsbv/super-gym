@@ -452,14 +452,20 @@
           <form class="form" action="https://echo.htmlacademy.ru/" method="post">
             <div class="form__container container">
               <h3 class="form__title title">Бесплатное занятие</h3>
-              <label class="form__label">
-                <span class="visually-hidden">Введите ваше имя.</span>
-                <input class="form__field field" type="text" placeholder="Имя" name="name" required pattern="^[a-zA-Zа-яА-Я\s]+$" title="Только буквы и пробелы">
-              </label>
-              <label class="form__label">
-                <span class="visually-hidden">Введите ваш телефон.</span>
-                <input class="form__field field" type="tel" placeholder="Телефон" name="phone" required pattern="^\d+$" title="Только цифры">
-              </label>
+              <div class="form__field-wrapper">
+                <label class="form__label">
+                  <span class="visually-hidden">Введите ваше имя.</span>
+                  <input class="form__field field" type="text" placeholder="Имя" name="name" required>
+                </label>
+                <span class="form__error form__error--name" id="nameError">Только буквы и пробелы</span>
+              </div>
+              <div class="form__field-wrapper">
+                <label class="form__label">
+                  <span class="visually-hidden">Введите ваш телефон.</span>
+                  <input class="form__field field" type="tel" placeholder="Телефон" name="phone" required>
+                </label>
+                <span class="form__error form__error--phone" id="phoneError">Только цифры</span>
+              </div>
               <button class="form__button button button--light" type="submit">Отправить</button>
             </div>
           </form>
