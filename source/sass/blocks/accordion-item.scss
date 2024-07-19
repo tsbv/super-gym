@@ -34,7 +34,7 @@
     border-radius: 15px;
 
     &::before {
-      content: '';
+      content: "";
       position: absolute;
       width: 14px;
       height: 1px;
@@ -50,7 +50,7 @@
     }
 
     &::after {
-      content: '';
+      content: "";
       position: absolute;
       display: block;
       width: 1px;
@@ -72,7 +72,7 @@
     }
   }
 
-  button[aria-expanded='true'] {
+  button[aria-expanded="true"] {
     .accordion-item__icon {
       &::after {
         width: 0;
