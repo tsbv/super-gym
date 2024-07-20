@@ -100,6 +100,7 @@ priceListButtons.forEach((button) => {
 });
 updatePrices('1 месяц');
 
+/* Табы с аккордеонами */
 const ANSWER_INDEX = 1;
 const QUESTION_INDEX = 2;
 const faqListButtons = document.querySelectorAll('.faq-list__button');
