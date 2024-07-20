@@ -28,7 +28,7 @@
 }
 
 .form__title {
-  margin: 0 0 32px;
+  margin: 0 0 34px;
   color: $white;
 
   @media (min-width: $tablet-width) {
@@ -45,7 +45,7 @@
 
 .form__label {
   display: block;
-  margin: 0 0 36px;
+  margin: 0 0 11px;
 
   @media (min-width: $tablet-width) {
     margin: 0;
@@ -80,6 +80,7 @@
 }
 
 .form__button {
+  margin: 2px 0 0;
   width: 100%;
   font-family: $font-family;
   font-weight: 700;

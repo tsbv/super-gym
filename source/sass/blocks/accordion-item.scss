@@ -70,6 +70,12 @@
       max-width: 660px;
     }
   }
+
+  br {
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+  }
 }
 
 .accordion-item .accordion-item__icon {

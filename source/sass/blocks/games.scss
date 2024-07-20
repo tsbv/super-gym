@@ -25,7 +25,7 @@
   padding: 40px;
   display: grid;
   grid-template-columns: 117px 56px;
-  gap: 16px 37px;
+  gap: 0 37px;
   background-color: $accent-bg;
 
   @media (min-width: $tablet-width) {
@@ -57,7 +57,7 @@
 }
 
 .games__text {
-  margin: 0;
+  margin: 16px 0;
   grid-column: 1 / -1;
   font-weight: 300;
   font-size: 16px;
@@ -73,11 +73,13 @@
 .games__link {
   grid-column: 1 / -1;
   display: block;
+  font-family: $font-family;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 100%;
+  text-transform: uppercase;
   text-align: center;
   text-decoration: none;
-  font-weight: 300;
-  font-size: 16px;
-  line-height: 125%;
   color: $white;
 }
 

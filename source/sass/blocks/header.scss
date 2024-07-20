@@ -1,5 +1,5 @@
 .header {
-  margin: 0 0 48px;
+  margin: 0 0 50px;
   padding: 10px 0;
   display: flex;
   justify-content: space-between;
@@ -12,7 +12,7 @@
 }
 
 .header__link {
-  padding: 6px;
+  padding: 4px 1px 6px;
   max-width: 188px;
   text-decoration: none;
   font-weight: 700;
@@ -21,6 +21,7 @@
   color: $white;
 
   @media (min-width: $tablet-width) {
+    padding: 6px;
     font-size: 24px;
   }
 

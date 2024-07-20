@@ -10,7 +10,7 @@
 .hero__content {
   display: grid;
   grid-template-columns: 113px 156px;
-  gap: 21px;
+  gap: 15px 22px;
 
   @media (min-width: $tablet-width) {
     grid-template-columns: 113px 185px 1fr;
@@ -48,6 +48,7 @@
 }
 
 .hero__city {
+  margin-right: 2px;
   grid-column: 2;
   font-family: $second-family;
   font-weight: 600;
@@ -103,6 +104,7 @@
 }
 
 .hero__link {
+  margin: 32px 0 0;
   text-decoration: none;
   grid-column: 1 / -1;
   font-weight: 700;

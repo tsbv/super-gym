@@ -42,13 +42,13 @@
   &--vk::before {
     content: "";
     position: absolute;
-    width: 12px;
-    height: 7px;
+    width: 13px;
+    height: 8px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     mask-image: url("/__spritemap#sprite-vk-view");
-    mask-size: 12px 7px;
+    mask-size: 13px 8px;
     mask-repeat: no-repeat;
     mask-position: center;
     background-color: $dark;
@@ -57,13 +57,13 @@
   &--ok::before {
     content: "";
     position: absolute;
-    width: 9px;
-    height: 16px;
+    width: 10px;
+    height: 17px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     mask-image: url("/__spritemap#sprite-ok-view");
-    mask-size: 9px 16px;
+    mask-size: 10px 17px;
     mask-repeat: no-repeat;
     mask-position: center;
     background-color: $dark;
@@ -72,13 +72,13 @@
   &--reddit::before {
     content: "";
     position: absolute;
-    width: 14px;
-    height: 14px;
+    width: 15px;
+    height: 15px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     mask-image: url("/__spritemap#sprite-reddit-view");
-    mask-size: 14px 14px;
+    mask-size: 15px 15px;
     mask-repeat: no-repeat;
     mask-position: center;
     background-color: $dark;

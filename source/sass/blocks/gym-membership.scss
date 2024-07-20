@@ -111,7 +111,7 @@
 }
 
 .gym-membership__link {
-  padding: 25px;
+  padding: 27px;
   display: block;
   text-decoration: none;
   text-align: center;
@@ -130,12 +130,13 @@
     position: absolute;
     width: 30px;
     height: 42px;
-    right: -40px;
+    right: -37px;
     top: 50%;
     transform: translateY(-50%);
     background-image: url("/__spritemap#sprite-ruble-view");
     background-repeat: no-repeat;
     background-size: 24px 33px;
+    background-position: center;
 
     @media (min-width: $tablet-width) {
       background-size: 30px 42px;

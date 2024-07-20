@@ -21,10 +21,10 @@
 
 .faq__title {
   margin: 0 0 35px;
+  text-align: center;
 
   @media (min-width: $tablet-width) {
     margin: 0 0 45px;
-    text-align: center;
   }
 
   @media (min-width: $desktop-width) {

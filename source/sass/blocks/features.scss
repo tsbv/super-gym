@@ -1,5 +1,5 @@
 .features {
-  padding: 40px 15px;
+  padding: 40px 0;
 
   @media (min-width: $tablet-width) {
     padding: 60px 45px;
@@ -8,6 +8,10 @@
   @media (min-width: $desktop-width) {
     padding: 100px 103px;
   }
+}
+
+.features__container {
+  max-width: none;
 }
 
 .features__title {
@@ -39,6 +43,7 @@
 }
 
 .features__item {
+  padding: 0 15px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -46,6 +51,7 @@
   gap: 12px;
 
   @media (min-width: $tablet-width) {
+    padding: 0;
     display: grid;
     gap: 15px;
   }
@@ -125,9 +131,10 @@
 
   p {
     margin: 0;
+    max-width: 230px;
     font-weight: 300;
     font-size: 14px;
-    line-height: 157%;
+    line-height: 158%;
     text-align: center;
     color: $primary-dark;
 
@@ -146,9 +153,10 @@
 }
 
 .features__item--accent {
+  margin: 5px 0;
   padding: 30px 60px 40px;
   background-color: $btn-border;
-  gap: 20px;
+  gap: 6px;
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -179,7 +187,7 @@
   }
 
   h3 {
-    margin-top: 5px;
+    margin: 0 0 13px;
     font-weight: 700;
     font-size: 22px;
     line-height: 100%;
