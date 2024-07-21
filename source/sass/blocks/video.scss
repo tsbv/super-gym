@@ -111,6 +111,12 @@
   mask-repeat: no-repeat;
   mask-position: center;
   z-index: 1;
+
+  @media (min-width: $desktop-width) {
+    width: 13px;
+    height: 15px;
+    mask-size: 13px 15px;
+  }
 }
 
 .video__iframe {
