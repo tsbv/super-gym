@@ -8,6 +8,10 @@
   background-size: cover;
   cursor: pointer;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../img/about/video-preview-mobile@2x.jpg");
+  }
+
   &::before {
     content: "";
     position: absolute;
@@ -35,6 +39,10 @@
   @media (min-width: $tablet-width) {
     max-width: 270px;
     background-image: url("../../img/about/video-preview-tablet.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/about/video-preview-tablet@2x.jpg");
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -42,6 +50,10 @@
     max-width: 360px;
     min-height: 230px;
     background-image: url("../../img/about/video-preview-desktop.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/about/video-preview-desktop@2x.jpg");
+    }
 
     &::before {
       width: 72px;
