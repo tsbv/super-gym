@@ -66,9 +66,9 @@
 
   &:disabled {
     &::after {
-      background-color: rgba(16, 38, 84, 0.3);
+      background-color: $primary-dark;
       pointer-events: none;
-      opacity: 0.9;
+      opacity: 0.3;
     }
 
     &:hover {
@@ -106,7 +106,7 @@
 
 .swiper-button-next.swiper-button-disabled,
 .swiper-button-prev.swiper-button-disabled {
-  opacity: 0.3;
+  opacity: 1;
   cursor: auto;
   pointer-events: none;
 }
