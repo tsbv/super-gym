@@ -5,6 +5,10 @@
   @media (min-width: $tablet-width) {
     padding: 0 45px 100px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 45px 120px;
+  }
 }
 
 .hero__content {
@@ -19,8 +23,8 @@
 
   @media (min-width: $desktop-width) {
     grid-template-columns: 118px 270px 1fr;
-    gap: 0;
-    padding: 0 72px 0 147px;
+    gap: 40px 0;
+    padding: 0 72px 0 145px;
   }
 }
 
@@ -44,12 +48,13 @@
 
   @media (min-width: $desktop-width) {
     margin: 0 0 71px;
+    padding: 0;
     max-width: 118px;
   }
 }
 
 .hero__city {
-  margin-right: 2px;
+  margin: 0 2px 0 0;
   grid-column: 2;
   font-family: $second-family;
   font-weight: 600;
@@ -59,13 +64,12 @@
   text-align: right;
 
   @media (min-width: $tablet-width) {
-    margin-top: 31px;
-    margin-right: 0;
+    margin: 31px 0 0 0;
     font-size: 42px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 52px;
+    margin: 52px 2px 0 0;
     font-size: 54px;
   }
 }
@@ -89,8 +93,10 @@
   }
 
   @media (min-width: $desktop-width) {
+    margin-right: 2px;
     font-size: 92px;
     line-height: 120%;
+    letter-spacing: 0.04em;
   }
 }
 
@@ -122,6 +128,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin: 40px 0 0;
+    margin: 0;
+    padding: 27px;
   }
 }

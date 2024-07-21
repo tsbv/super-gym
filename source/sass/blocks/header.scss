@@ -9,6 +9,10 @@
     margin: 0;
     padding: 24px 0;
   }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 26px;
+  }
 }
 
 .header__link {
@@ -26,6 +30,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    padding: 8px 0;
     font-size: 26px;
   }
 
