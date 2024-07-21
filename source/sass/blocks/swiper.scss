@@ -26,7 +26,7 @@
   background-color: transparent;
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 16px 32px;
+  background-size: 18px 32px;
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -35,10 +35,10 @@
   &::after {
     content: "";
     display: block;
-    width: 16px;
+    width: 18px;
     height: 32px;
     mask-image: url("/__spritemap#sprite-arrow-view");
-    mask-size: 16px 31px;
+    mask-size: 18px 31px;
     mask-repeat: no-repeat;
     mask-position: center;
     background-color: $primary-dark;
@@ -79,18 +79,22 @@
 }
 
 .swiper .swiper-button-prev {
-  left: -100px;
+  top: 49%;
+  left: -106px;
 }
 
 .swiper .swiper-button-next {
-  right: -100px;
+  top: 49%;
+  right: -106px;
 }
 
 .swiper1 .swiper-button-prev {
+  top: 49.2%;
   left: -70px;
 }
 
 .swiper1 .swiper-button-next {
+  top: 49.2%;
   right: -70px;
 }
 

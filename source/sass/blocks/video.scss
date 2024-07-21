@@ -8,7 +8,7 @@
   background-size: cover;
   cursor: pointer;
 
-  @media (min-resolution: 2dppx) {
+  @media (resolution >= 2dppx) {
     background-image: url("../../img/about/video-preview-mobile@2x.jpg");
   }
 
@@ -40,7 +40,7 @@
     max-width: 270px;
     background-image: url("../../img/about/video-preview-tablet.jpg");
 
-    @media (min-resolution: 2dppx) {
+    @media (resolution >= 2dppx) {
       background-image: url("../../img/about/video-preview-tablet@2x.jpg");
     }
   }
@@ -51,7 +51,7 @@
     min-height: 230px;
     background-image: url("../../img/about/video-preview-desktop.jpg");
 
-    @media (min-resolution: 2dppx) {
+    @media (resolution >= 2dppx) {
       background-image: url("../../img/about/video-preview-desktop@2x.jpg");
     }
 

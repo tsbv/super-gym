@@ -86,9 +86,8 @@
 
   @media (min-width: $tablet-width) {
     font-size: 24px;
-  }
+    gap: 6px;
 
-  @media (min-width: $desktop-width) {
     &:nth-child(2),
     &:nth-child(4) {
       order: 3;

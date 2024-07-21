@@ -65,12 +65,14 @@
   color: $white;
 
   @media (min-width: $tablet-width) {
+    margin: 0;
     font-size: 18px;
     line-height: 133%;
   }
 }
 
 .games__link {
+  padding: 27px;
   grid-column: 1 / -1;
   display: block;
   font-family: $font-family;
