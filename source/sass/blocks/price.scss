@@ -22,6 +22,13 @@
 
   @media (min-width: $desktop-width) {
     padding: 100px 103px;
+
+    &::after {
+      width: 303px;
+      height: 413px;
+      bottom: 33px;
+      background-image: url("../../img/price/price-decoration-desktop.png");
+    }
   }
 }
 
@@ -44,6 +51,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0 0 20px;
+    margin: 0 0 14px;
   }
 }
