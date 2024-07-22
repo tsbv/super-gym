@@ -36,8 +36,14 @@
   }
 
   @media (min-width: $desktop-width) {
-    grid-template-columns: 21px 37px;
+    grid-template-columns: 21px 67px;
     gap: 12px 5px;
+  }
+}
+
+.date-time:nth-child(3) {
+  @media (min-width: $desktop-width) {
+    margin-bottom: 26px;
   }
 }
 
