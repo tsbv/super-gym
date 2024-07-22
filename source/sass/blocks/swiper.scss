@@ -91,11 +91,19 @@
 .swiper1 .swiper-button-prev {
   top: 49.2%;
   left: -70px;
+
+  @media (min-width: $desktop-width) {
+    top: 48%;
+  }
 }
 
 .swiper1 .swiper-button-next {
   top: 49.2%;
   right: -70px;
+
+  @media (min-width: $desktop-width) {
+    top: 48%;
+  }
 }
 
 .swiper-button-next {
