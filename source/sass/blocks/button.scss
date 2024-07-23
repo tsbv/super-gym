@@ -61,12 +61,12 @@
   }
 }
 
-.button--light.button--disabled {
+.button--light.button-disabled {
   opacity: 0.5;
   pointer-events: none;
 }
 
-.button--dark.button--disabled {
+.button--dark.button-disabled {
   opacity: 0.3;
   pointer-events: none;
 }
