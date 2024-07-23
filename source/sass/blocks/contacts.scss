@@ -6,7 +6,7 @@
   color: $primary-dark;
 
   @media (min-width: $tablet-width) {
-    padding: 60px 164px;
+    padding: 60px 164px 62px;
   }
 
   @media (min-width: $desktop-width) {
@@ -25,7 +25,7 @@
   margin: 0 0 38px;
 
   @media (min-width: $tablet-width) {
-    margin: 0 0 36px;
+    margin: 0 0 35px;
     font-size: 54px;
     text-align: center;
   }
@@ -46,7 +46,7 @@
     max-width: none;
     display: grid;
     grid-template-columns: 190px 190px;
-    gap: 15px 60px;
+    gap: 14px 60px;
     justify-content: center;
 
     &::before {

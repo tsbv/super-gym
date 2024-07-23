@@ -6,11 +6,13 @@
 
   @media (min-width: $tablet-width) {
     margin: 0;
+    padding: 0 0 3px;
     gap: 5px;
     justify-content: space-between;
   }
 
   @media (min-width: $desktop-width) {
+    padding: 0;
     gap: 57px;
   }
 }
