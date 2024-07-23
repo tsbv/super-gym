@@ -68,6 +68,10 @@
     font-size: 18px;
     line-height: 133%;
   }
+
+  @media (min-width: $desktop-width) {
+    margin: 15px 0 0;
+  }
 }
 
 .promotion__link {

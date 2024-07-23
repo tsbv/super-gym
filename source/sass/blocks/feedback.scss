@@ -3,6 +3,17 @@
 
   @media (min-width: $desktop-width) {
     background: linear-gradient(90deg, $primary-dark 50%, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 1) 100%);
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 50%;
+      height: 1px;
+      top: 0;
+      right: 0;
+      background-color: $divider;
+    }
   }
 }
 

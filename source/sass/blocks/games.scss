@@ -69,6 +69,10 @@
     font-size: 18px;
     line-height: 133%;
   }
+
+  @media (min-width: $desktop-width) {
+    transform: translateY(-9px);
+  }
 }
 
 .games__link {
@@ -85,6 +89,13 @@
 
   @media (min-width: $tablet-width) {
     padding: 27px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 26px;
   }
 }
 
