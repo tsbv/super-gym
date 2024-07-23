@@ -14,16 +14,7 @@ video.addEventListener('click', () => {
 });
 
 /* Тень цены */
-/* const priceShadowElements = document.querySelectorAll('.gym-membership__price-shadow');
-
-priceShadowElements.forEach((priceShadowElement) => {
-  const priceElement = priceShadowElement.previousElementSibling;
-  const price = priceElement.textContent.trim();
-  priceShadowElement.style.setProperty('--price-shadow', `"${price}"`);
-}); */
-
 const priceShadowElements = document.querySelectorAll('.gym-membership__price-shadow');
-
 priceShadowElements.forEach((priceShadowElement) => {
   const priceElement = priceShadowElement.previousElementSibling;
   const price = priceElement.textContent.trim();
@@ -32,7 +23,6 @@ priceShadowElements.forEach((priceShadowElement) => {
 
 /* Слайдер отзывов */
 const slider = document.querySelector('.swiper');
-const slider1 = document.querySelector('.swiper1');
 const swiper = new Swiper(slider, {
   modules: [Navigation],
   slidesPerView: 1,
@@ -43,25 +33,24 @@ const swiper = new Swiper(slider, {
   },
 });
 swiper.update();
+
+/* Слайдер жюри */
+const slider1 = document.querySelector('.swiper1');
 const swiper1 = new Swiper(slider1, {
   modules: [Navigation],
   slidesPerView: 4,
   spaceBetween: 40,
-  slidesPerGroup: 4,
   loop: true,
   breakpoints: {
     320: {
       slidesPerView: 1,
-      spaceBetween: 40,
-      slidesPerGroup: 1
+      spaceBetween: 40
     },
     768: {
-      slidesPerView: 2,
-      slidesPerGroup: 2
+      slidesPerView: 2
     },
     1366: {
-      slidesPerView: 4,
-      slidesPerGroup: 4
+      slidesPerView: 4
     }
   },
   navigation: {
@@ -177,6 +166,7 @@ faqListButtons.forEach((button) => {
   });
 });
 
+/* Валидация формы */
 const NAME_REGEX = /^[a-zA-Zа-яА-Я\s]+$/;
 const PHONE_REGEX = /^\d+$/;
 const form = document.querySelector('.form');
