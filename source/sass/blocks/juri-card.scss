@@ -13,8 +13,23 @@
         position: absolute;
         top: 46px;
         z-index: 1;
-        transition: top 0.3s ease-in-out; // Add this line
+        transition: top 0.3s ease-in-out;
       }
+    }
+  }
+
+  &:focus {
+    outline: none;
+
+    .juri__info {
+      opacity: 1;
+    }
+
+    .juri__name {
+      position: absolute;
+      top: 46px;
+      z-index: 1;
+      transition: top 0.3s ease-in-out;
     }
   }
 }
