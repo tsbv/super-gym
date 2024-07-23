@@ -3,8 +3,8 @@ import 'swiper/css';
 import { Navigation } from 'swiper/modules';
 
 const initJurySlider = () => {
-  const slider1 = document.querySelector('.swiper1');
-  const swiper1 = new Swiper(slider1, {
+  const sliderJuriEl = document.querySelector('.swiper-juri');
+  const swiperJuri = new Swiper(sliderJuriEl, {
     modules: [Navigation],
     slidesPerView: 4,
     spaceBetween: 40,
@@ -26,7 +26,7 @@ const initJurySlider = () => {
       prevEl: '.swiper-button-prev',
     },
   });
-  swiper1.update();
+  swiperJuri.update();
 };
 
 export { initJurySlider };

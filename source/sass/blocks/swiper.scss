@@ -2,17 +2,18 @@
   position: relative;
 }
 
-.swiper-container .swiper,
-.swiper-container .swiper1 {
+.swiper-container .swiper-review,
+.swiper-container .swiper-juri {
   position: static;
 }
 
-.swiper {
+.swiper-review {
   width: 100%;
   height: 100%;
+  overflow: hidden;
 }
 
-.swiper1 {
+.swiper-juri {
   overflow: hidden;
 }
 
@@ -78,7 +79,7 @@
   }
 }
 
-.swiper .swiper-button-prev {
+.swiper-review .swiper-button-prev {
   top: 49%;
   left: -106px;
 
@@ -88,7 +89,7 @@
   }
 }
 
-.swiper .swiper-button-next {
+.swiper-review .swiper-button-next {
   top: 49%;
   right: -106px;
 
@@ -98,7 +99,7 @@
   }
 }
 
-.swiper1 .swiper-button-prev {
+.swiper-juri .swiper-button-prev {
   top: 49.2%;
   left: -70px;
 
@@ -107,7 +108,7 @@
   }
 }
 
-.swiper1 .swiper-button-next {
+.swiper-juri .swiper-button-next {
   top: 49.2%;
   right: -70px;
 

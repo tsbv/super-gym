@@ -3,8 +3,8 @@ import 'swiper/css';
 import { Navigation } from 'swiper/modules';
 
 const initReviewSlider = () => {
-  const slider = document.querySelector('.swiper');
-  const swiper = new Swiper(slider, {
+  const sliderReviewEl = document.querySelector('.swiper-review');
+  const swiperReview = new Swiper(sliderReviewEl, {
     modules: [Navigation],
     slidesPerView: 1,
     spaceBetween: 40,
@@ -13,7 +13,7 @@ const initReviewSlider = () => {
       prevEl: '.swiper-button-prev',
     },
   });
-  swiper.update();
+  swiperReview.update();
 };
 
 export { initReviewSlider };
