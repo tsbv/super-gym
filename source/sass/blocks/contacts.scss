@@ -108,6 +108,23 @@
   font-size: 14px;
   line-height: 143%;
   color: $primary-dark;
+
+  @media (hover: hover) {
+    &:hover {
+      text-decoration: underline;
+      color: $divider;
+    }
+  }
+
+  &:focus {
+    outline: none;
+    text-decoration: underline;
+    color: $divider;
+  }
+
+  &:active {
+    color: $primary-dark;
+  }
 }
 
 .contacts__email {
@@ -116,4 +133,21 @@
   color: $primary-dark;
   font-size: 14px;
   line-height: 143%;
+
+  @media (hover: hover) {
+    &:hover {
+      text-decoration: underline;
+      color: $divider;
+    }
+  }
+
+  &:focus {
+    outline: none;
+    text-decoration: underline;
+    color: $divider;
+  }
+
+  &:active {
+    color: $primary-dark;
+  }
 }
