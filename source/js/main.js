@@ -1,11 +1,11 @@
-import { loadVideo } from './video.js';
-import { initPriceTabs } from './price-tabs.js';
-import { updatePriceShadow } from './price-shadow.js';
-import { initJurySlider } from './juri-slider.js';
-import { initReviewSlider } from './review-slider.js';
-import { initFaqTabs } from './faq-tabs.js';
-import { initAccordions } from './accordions.js';
-import { initFormValidation } from './form-validation.js';
+import { loadVideo } from './video';
+import { initPriceTabs } from './price-tabs';
+import { updatePriceShadow } from './price-shadow';
+import { initJurySlider } from './juri-slider';
+import { initReviewSlider } from './review-slider';
+import { initFaqTabs } from './faq-tabs';
+import { initAccordions } from './accordions';
+import { initFormValidation } from './form-validation';
 
 loadVideo(); // Загрузка видео
 initPriceTabs(); // Табы с ценами абонементов
