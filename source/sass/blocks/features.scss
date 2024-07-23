@@ -189,7 +189,7 @@
 }
 
 .features__item--accent {
-  margin: 5px 0;
+  margin: 6px 0 5px;
   padding: 29px 60px 40px;
   background-color: $btn-border;
   gap: 6px;
@@ -246,9 +246,11 @@
   }
 
   p {
+    max-width: 170px;
     color: $white;
 
     @media (min-width: $tablet-width) {
+      max-width: 250px;
       text-align: center;
     }
 

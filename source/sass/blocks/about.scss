@@ -108,8 +108,10 @@
     }
   }
 
-  p:not(:last-child) {
-    margin: 0 0 8px;
+  @media (min-width: $desktop-width) {
+    p:not(:last-child) {
+      margin: 0 0 8px;
+    }
   }
 }
 
