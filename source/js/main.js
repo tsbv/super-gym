@@ -14,10 +14,20 @@ video.addEventListener('click', () => {
 });
 
 /* Тень цены */
-const priceElements = document.querySelectorAll('.gym-membership__price');
-priceElements.forEach((priceElement) => {
+/* const priceShadowElements = document.querySelectorAll('.gym-membership__price-shadow');
+
+priceShadowElements.forEach((priceShadowElement) => {
+  const priceElement = priceShadowElement.previousElementSibling;
   const price = priceElement.textContent.trim();
-  priceElement.style.setProperty('--price-shadow', `"${price}"`);
+  priceShadowElement.style.setProperty('--price-shadow', `"${price}"`);
+}); */
+
+const priceShadowElements = document.querySelectorAll('.gym-membership__price-shadow');
+
+priceShadowElements.forEach((priceShadowElement) => {
+  const priceElement = priceShadowElement.previousElementSibling;
+  const price = priceElement.textContent.trim();
+  priceShadowElement.textContent = price;
 });
 
 /* Слайдер отзывов */
@@ -78,7 +88,7 @@ items.forEach((item) => item.addEventListener('click', toggleAccordion));
 /* Табы с ценами абонементов */
 const priceListButtons = document.querySelectorAll('.price-list__button');
 const gymMembershipPrices = document.querySelectorAll('.gym-membership__price-text');
-const gymMembershipPriceElements = document.querySelectorAll('.gym-membership__price');
+const gymMembershipPriceShadows = document.querySelectorAll('.gym-membership__price-shadow');
 const priceData = {
   '1 месяц': ['5000', '1700', '2700'],
   '6 месяцев': ['30000', '10200', '16200'],
@@ -88,7 +98,7 @@ const updatePrices = (period) => {
   const prices = priceData[period];
   gymMembershipPrices.forEach((price, index) => {
     price.textContent = prices[index];
-    gymMembershipPriceElements[index].style.setProperty('--price-shadow', `"${prices[index]}"`);
+    gymMembershipPriceShadows[index].textContent = prices[index];
   });
 };
 priceListButtons.forEach((button) => {
