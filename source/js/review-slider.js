@@ -8,6 +8,12 @@ const initReviewSlider = () => {
     modules: [Navigation],
     slidesPerView: 1,
     spaceBetween: 40,
+    simulateTouch: true,
+    breakpoints: {
+      768: {
+        simulateTouch: false
+      },
+    },
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',

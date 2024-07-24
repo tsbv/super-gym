@@ -8,6 +8,7 @@ const initJurySlider = () => {
     modules: [Navigation],
     slidesPerView: 4,
     spaceBetween: 40,
+    simulateTouch: true,
     loop: true,
     breakpoints: {
       320: {
@@ -15,7 +16,8 @@ const initJurySlider = () => {
         spaceBetween: 40
       },
       768: {
-        slidesPerView: 2
+        slidesPerView: 2,
+        simulateTouch: false
       },
       1366: {
         slidesPerView: 4
