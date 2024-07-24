@@ -34,6 +34,21 @@
       }
     }
   }
+
+  &:focus-within {
+    background: linear-gradient(151deg, $accent-bg 0%, #003eb7 100%);
+    z-index: 1;
+
+    &::before {
+      content: "";
+    }
+
+    .gym-membership__link {
+      color: $white;
+      box-shadow: none;
+      background: linear-gradient(151deg, $accent-bg 0%, #003eb7 100%);
+    }
+  }
 }
 
 .gym-membership__name {
