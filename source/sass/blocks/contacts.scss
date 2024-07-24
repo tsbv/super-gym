@@ -116,12 +116,6 @@
     }
   }
 
-  &:focus {
-    outline: none;
-    text-decoration: underline;
-    color: $divider;
-  }
-
   &:active {
     color: $primary-dark;
   }
@@ -139,12 +133,6 @@
       text-decoration: underline;
       color: $divider;
     }
-  }
-
-  &:focus {
-    outline: none;
-    text-decoration: underline;
-    color: $divider;
   }
 
   &:active {
