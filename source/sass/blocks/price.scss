@@ -16,7 +16,12 @@
       bottom: 0;
       background-image: url("../../img/price/price-decoration-tablet.png");
       background-repeat: no-repeat;
+      background-size: 325px 388px;
       z-index: -1;
+
+      @media (resolution >= 2dppx) {
+        background-image: url("../../img/price/price-decoration-tablet@2x.png");
+      }
     }
   }
 
@@ -25,9 +30,15 @@
 
     &::after {
       width: 303px;
-      height: 413px;
-      bottom: 33px;
+      height: 448px;
+      bottom: -1px;
       background-image: url("../../img/price/price-decoration-desktop.png");
+      background-repeat: no-repeat;
+      background-size: 303px 448px;
+
+      @media (resolution >= 2dppx) {
+        background-image: url("../../img/price/price-decoration-desktop@2x.png");
+      }
     }
   }
 }
