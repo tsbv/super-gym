@@ -68,7 +68,7 @@
         outline: 2px solid rgba(16, 38, 84, 0.6);
       }
 
-      .video__icon {
+      .video__play-icon {
         background-color: rgba(16, 38, 84, 0.6);
       }
     }
@@ -82,7 +82,7 @@
       outline: 2px solid $primary-dark;
     }
 
-    .video__icon {
+    .video__play-icon {
       background-color: $primary-dark;
     }
   }
@@ -101,7 +101,7 @@
   }
 }
 
-.video__icon {
+.video__play-icon {
   position: absolute;
   display: block;
   width: 9px;
@@ -140,7 +140,7 @@
     opacity: 0.4;
   }
 
-  .video__icon {
+  .video__play-icon {
     background-color: $primary-dark;
     opacity: 0.4;
   }
