@@ -1,8 +1,8 @@
 const loadVideo = () => {
   const videoEl = document.querySelector('.video');
-  const playButton = document.querySelector('.video__play-button');
+  const playButtonEl = document.querySelector('.video__play-button');
   const src = `${videoEl.dataset.src}?autoplay=1`;
-  playButton.addEventListener('click', () => {
+  playButtonEl.addEventListener('click', () => {
     if (videoEl.classList.contains('video--loaded')) {
       return;
     }
