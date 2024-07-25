@@ -2,9 +2,10 @@
   padding: 50px 42px;
   background-color: $white;
   position: relative;
+  z-index: 1;
 
   &::before {
-    content: none;
+    content: "";
     position: absolute;
     top: 8px;
     left: 8px;
@@ -18,58 +19,9 @@
     padding: 65px;
   }
 
-  @media (hover: hover) {
-    &:hover {
-      background: linear-gradient(151deg, $accent-bg 0%, #003eb7 100%);
-      z-index: 1;
-
-      &::before {
-        content: "";
-      }
-
-      .gym-membership__link {
-        color: $white;
-        box-shadow: none;
-        background: linear-gradient(151deg, $accent-bg 0%, #003eb7 100%);
-      }
-    }
-  }
-
   &:focus-within {
     background: linear-gradient(151deg, $accent-bg 0%, #003eb7 100%);
     z-index: 1;
-
-    &::before {
-      content: "";
-    }
-
-    .gym-membership__link {
-      color: $white;
-      box-shadow: none;
-      background: linear-gradient(151deg, $accent-bg 0%, #003eb7 100%);
-
-      @media (hover: hover) {
-        &:hover {
-          color: $white;
-          box-shadow: none;
-          background: linear-gradient(151deg, $accent-bg 0%, #003eb7 100%);
-        }
-      }
-
-      &:focus {
-        outline: none;
-
-        /*         background: linear-gradient(151deg, rgba(237, 2, 51, 0.8) 0%, rgba(0, 62, 183, 0.8) 100%);
-        box-shadow: inset 0 0 0 2px #000000;
-        color: $white; */
-      }
-
-      &:active {
-        box-shadow: none;
-        background: linear-gradient(151deg, $accent-bg 0%, #003eb7 100%);
-        color: #deb9d0;
-      }
-    }
   }
 }
 
@@ -143,6 +95,27 @@
   line-height: 100%;
   text-transform: uppercase;
   color: $primary-dark;
+
+  &:focus {
+    outline: none;
+    background: linear-gradient(151deg, rgba(237, 2, 51, 0.8) 0%, rgba(0, 62, 183, 0.8) 100%);
+    box-shadow: inset 0 0 0 2px #000000;
+    color: $white;
+  }
+
+  @media (hover: hover) {
+    &:hover {
+      color: $white;
+      box-shadow: none;
+      background: linear-gradient(151deg, $accent-bg 0%, #003eb7 100%);
+    }
+  }
+
+  &:active {
+    box-shadow: none;
+    background: linear-gradient(151deg, $accent-bg 0%, #003eb7 100%);
+    color: #deb9d0;
+  }
 }
 
 .gym-membership__price-text {
