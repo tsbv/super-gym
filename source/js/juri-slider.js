@@ -20,7 +20,8 @@ const initJurySlider = () => {
         simulateTouch: false
       },
       1366: {
-        slidesPerView: 4
+        slidesPerView: 4,
+        simulateTouch: false
       }
     },
     navigation: {
