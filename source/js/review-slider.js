@@ -1,11 +1,10 @@
-import Swiper from 'swiper';
-import 'swiper/css';
-import { Navigation } from 'swiper/modules';
+import { Swiper } from './vendor/swiper-bundle.min';
+/* import 'swiper/css';
+import { Navigation } from 'swiper/modules'; */
 
 const initReviewSlider = () => {
   const sliderReviewEl = document.querySelector('.swiper-review');
   const swiperReview = new Swiper(sliderReviewEl, {
-    modules: [Navigation],
     slidesPerView: 1,
     spaceBetween: 40,
     simulateTouch: true,
