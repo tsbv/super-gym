@@ -37,7 +37,7 @@
       &::after {
         content: "";
         position: absolute;
-        width: 100%;
+        width: calc(100% - 20px);
         height: 1px;
         background-color: $white;
         bottom: 0;
