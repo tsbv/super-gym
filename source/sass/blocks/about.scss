@@ -31,6 +31,7 @@
 .about__description-wrapper {
   margin: 0 auto;
   padding: 40px 15px 36px;
+  min-width: 320px;
   max-width: 320px;
 
   @media (min-width: $tablet-width) {
@@ -41,6 +42,7 @@
   @media (min-width: $desktop-width) {
     margin: 0;
     padding: 0;
+    min-width: 355px;
     max-width: 355px;
   }
 }
