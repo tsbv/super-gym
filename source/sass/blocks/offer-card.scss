@@ -1,5 +1,5 @@
 .offer-card {
-  padding: 28px 28px 27px;
+  padding: 28px 28px 12px;
   position: relative;
   background: linear-gradient(145deg, #d10a42 0%, #00359f 100%);
   display: flex;
@@ -60,13 +60,13 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 27px;
+    padding: 28px 27px 13px;
   }
 }
 
 .offer-card__link {
-  padding: 0 0 5px;
-  max-width: 73px;
+  padding: 10px;
+  max-width: 93px;
   position: relative;
   display: block;
   text-decoration: none;
@@ -75,15 +75,14 @@
   line-height: 100%;
   text-transform: uppercase;
   color: $btn-border;
-
-  /* border-bottom: 1px solid $divider; */
+  transform: translateY(-10px);
 
   &::after {
     content: "";
     position: absolute;
-    width: 100%;
+    width: calc(100% - 20px);
     height: 1px;
-    bottom: 0;
+    bottom: 5px;
     left: 50%;
     transform: translateX(-50%);
     background-color: $divider;
@@ -91,6 +90,7 @@
 
   @media (min-width: $tablet-width) {
     margin-top: auto;
+    transform: translate(-10px, -10px);
   }
 
   @media (hover: hover) {

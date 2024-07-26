@@ -10,7 +10,7 @@
 }
 
 .promotion__description-wrapper {
-  padding: 30px;
+  padding: 30px 30px 25px;
   background-color: $accent-bg;
 
   @media (min-width: $tablet-width) {
@@ -56,10 +56,14 @@
     margin-top: 20px;
     font-size: 70px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 22px;
+  }
 }
 
 .promotion__text {
-  margin: 0 0 23px;
+  margin: 0 0 18px;
   font-weight: 300;
   font-size: 16px;
   line-height: 125%;
@@ -75,15 +79,15 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin: 15px 0 0;
+    margin: 14px 0 0;
   }
 }
 
 .promotion__link {
   margin: 0 auto;
-  padding: 5px 0;
+  padding: 10px;
   position: relative;
-  max-width: 73px;
+  max-width: 93px;
   display: block;
   text-decoration: none;
   font-weight: 700;
@@ -95,9 +99,9 @@
   &::after {
     content: "";
     position: absolute;
-    width: 100%;
+    width: calc(100% - 20px);
     height: 1px;
-    bottom: 0;
+    bottom: 5px;
     left: 50%;
     transform: translateX(-50%);
     background-color: $white;
@@ -105,7 +109,7 @@
 
   @media (min-width: $tablet-width) {
     margin: auto 0 0;
-    padding: 5px 0;
+    transform: translate(-10px, 5px);
   }
 
   @media (hover: hover) {
@@ -115,19 +119,19 @@
   }
 
   &:focus {
+    outline: 1px solid $white;
+
     &::after {
       content: none;
     }
-
-    outline: 1px solid $white;
   }
 
   &:active {
+    opacity: 1;
+    outline: none;
+
     &::after {
       content: "";
     }
-
-    opacity: 1;
-    outline: none;
   }
 }
