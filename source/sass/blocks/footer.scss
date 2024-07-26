@@ -15,16 +15,15 @@
 .footer__container {
   @media (min-width: $tablet-width) {
     display: grid;
-    grid-template-columns: 110px 392px 105px;
-    justify-content: center;
+    grid-template-columns: 110px 413px 105px;
+    justify-content: space-between;
     align-items: center;
-    gap: 35px;
+    gap: 20px;
   }
 
   @media (min-width: $desktop-width) {
-    grid-template-columns: 130px 600px 95px;
-    justify-content: space-between;
-    gap: 167px;
+    grid-template-columns: 130px 619px 95px;
+    gap: 140px;
   }
 }
 
