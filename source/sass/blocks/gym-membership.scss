@@ -5,7 +5,7 @@
   z-index: 1;
 
   &::before {
-    content: "";
+    content: none;
     position: absolute;
     top: 8px;
     left: 8px;
@@ -19,9 +19,20 @@
     padding: 65px;
   }
 
+  &:has(.gym-membership__link:hover) {
+    background: linear-gradient(151deg, $accent-bg 0%, #003eb7 100%);
+
+    &::before {
+      content: "";
+    }
+  }
+
   &:focus-within {
     background: linear-gradient(151deg, $accent-bg 0%, #003eb7 100%);
-    z-index: 1;
+
+    &::before {
+      content: "";
+    }
   }
 }
 
