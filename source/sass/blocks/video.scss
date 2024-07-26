@@ -108,11 +108,12 @@
   &:active {
     background: $white;
     outline: 2px solid $primary-dark;
-    transform: translate(-50%, -50%) scale(0.8);
+    transform: translate(-50%, 115%) scale(0.8);
     outline-offset: 17px;
 
     @media (min-width: $desktop-width) {
-      outline-offset: 19px;
+      transform: translate(-50%, -50%) scale(0.8);
+      outline-offset: 23px;
     }
   }
 }
