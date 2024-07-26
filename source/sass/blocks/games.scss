@@ -25,19 +25,20 @@
   padding: 40px;
   display: grid;
   grid-template-columns: 117px 56px;
-  gap: 0 37px;
+  gap: 1px 37px;
   background-color: $accent-bg;
 
   @media (min-width: $tablet-width) {
     padding: 41px 40px 40px;
     grid-template-columns: 100px 100px;
     gap: 10px 20px;
+    grid-auto-rows: min-content;
   }
 
   @media (min-width: $desktop-width) {
     padding: 61px 80px 98px;
     grid-template-columns: 168px 95px;
-    gap: 20px 77px;
+    gap: 21px 77px;
   }
 }
 
@@ -58,7 +59,7 @@
 }
 
 .games__text {
-  margin: 17px 0;
+  margin: 16px 0 15px;
   grid-column: 1 / -1;
   font-weight: 300;
   font-size: 16px;
@@ -97,7 +98,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 26px;
   }
 }
 
