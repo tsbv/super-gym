@@ -39,10 +39,16 @@
     width: 18px;
     height: 32px;
     mask-image: url("/__spritemap#sprite-arrow-view");
-    mask-size: 18px 31px;
+    mask-size: 18px 32px;
     mask-repeat: no-repeat;
     mask-position: center;
     background-color: $primary-dark;
+
+    @media (min-width: $tablet-width) {
+      width: 18px;
+      height: 34px;
+      mask-size: 18px 34px;
+    }
   }
 
   @media (hover: hover) {

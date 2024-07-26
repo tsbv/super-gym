@@ -45,7 +45,7 @@
   position: relative;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, 100%);
   display: block;
   width: 52px;
   height: 52px;
@@ -74,6 +74,15 @@
   @media (min-width: $desktop-width) {
     width: 72px;
     height: 72px;
+    outline-offset: 11px;
+    transform: translate(-50%, -50%);
+
+    &::before {
+      width: 17px;
+      height: 17px;
+      mask-size: 17px 17px;
+      left: 53%;
+    }
   }
 
   @media (hover: hover) {
@@ -88,7 +97,6 @@
   }
 
   &:focus {
-    outline: none;
     background: #c8c9cc;
     outline: 2px solid $primary-dark;
 

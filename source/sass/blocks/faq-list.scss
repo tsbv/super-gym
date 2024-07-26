@@ -38,6 +38,10 @@
     font-size: 18px;
   }
 
+  @media (min-width: $desktop-width) {
+    padding: 19px 18px 17px;
+  }
+
   @media (hover: hover) {
     &:hover {
       box-shadow: inset 0 0 0 1px $primary-dark;

@@ -1,4 +1,8 @@
 .accordion {
   display: flex;
   flex-direction: column;
+
+  @media (min-width: $desktop-width) {
+    margin-top: -1px;
+  }
 }
