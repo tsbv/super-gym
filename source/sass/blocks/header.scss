@@ -15,23 +15,25 @@
   }
 }
 
-.header__link {
+.header__phone-link {
   padding: 4px 1px 6px;
   max-width: 188px;
   text-decoration: none;
   font-weight: 700;
   font-size: 22px;
-  line-height: 100%;
+  line-height: 22px;
   color: $white;
 
   @media (min-width: $tablet-width) {
     padding: 6px 0;
     font-size: 24px;
+    line-height: 24px;
   }
 
   @media (min-width: $desktop-width) {
     padding: 8px 0;
     font-size: 26px;
+    line-height: 26px;
   }
 
   @media (hover: hover) {

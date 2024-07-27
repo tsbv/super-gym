@@ -33,16 +33,18 @@
   text-align: center;
   font-weight: 700;
   font-size: 22px;
-  line-height: 100%;
+  line-height: 22px;
   color: $white;
 
   @media (min-width: $tablet-width) {
     text-align: start;
     font-size: 24px;
+    line-height: 24px;
   }
 
   @media (min-width: $desktop-width) {
     font-size: 24px;
+    line-height: 26px;
   }
 }
 
@@ -50,11 +52,12 @@
   margin-top: 9px;
   display: block;
   font-size: 64px;
-  line-height: 100%;
+  line-height: 64px;
 
   @media (min-width: $tablet-width) {
     margin-top: 20px;
     font-size: 70px;
+    line-height: 70px;
   }
 
   @media (min-width: $desktop-width) {
@@ -66,7 +69,7 @@
   margin: 0 0 18px;
   font-weight: 300;
   font-size: 16px;
-  line-height: 125%;
+  line-height: 20px;
   text-align: center;
   color: $white;
 
@@ -75,7 +78,7 @@
     margin: 13px 0 0;
     text-align: start;
     font-size: 18px;
-    line-height: 133%;
+    line-height: 24px;
   }
 
   @media (min-width: $desktop-width) {
@@ -92,7 +95,7 @@
   text-decoration: none;
   font-weight: 700;
   font-size: 14px;
-  line-height: 100%;
+  line-height: 14px;
   text-transform: uppercase;
   color: $white;
 

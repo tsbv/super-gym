@@ -13,13 +13,14 @@
     margin: 0;
     font-weight: 700;
     font-size: 22px;
-    line-height: 100%;
+    line-height: 22px;
     color: $btn-border;
 
     @media (min-width: $tablet-width) {
       margin: 0 0 10px;
       text-align: start;
       font-size: 26px;
+      line-height: 26px;
     }
   }
 
@@ -28,14 +29,14 @@
     text-align: center;
     font-weight: 300;
     font-size: 14px;
-    line-height: 157%;
+    line-height: 22px;
     color: $btn-border;
 
     @media (min-width: $tablet-width) {
       margin: 0 0 30px;
       text-align: start;
       font-size: 16px;
-      line-height: 150%;
+      line-height: 24px;
     }
 
     @media (min-width: $desktop-width) {
@@ -73,7 +74,7 @@
   text-decoration: none;
   font-weight: 700;
   font-size: 14px;
-  line-height: 100%;
+  line-height: 14px;
   text-transform: uppercase;
   color: $btn-border;
   transform: translateY(-10px);

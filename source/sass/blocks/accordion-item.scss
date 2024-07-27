@@ -34,7 +34,7 @@
     font-family: $font-family;
     font-weight: 400;
     font-size: 20px;
-    line-height: 100%;
+    line-height: 20px;
     color: $primary-dark;
 
     @media (min-width: $tablet-width) {
@@ -43,11 +43,13 @@
       display: flex;
       align-items: center;
       font-size: 22px;
+      line-height: 22px;
     }
 
     @media (min-width: $desktop-width) {
       max-width: 660px;
       font-size: 24px;
+      line-height: 24px;
       transform: translateY(-1px);
     }
   }
@@ -62,13 +64,13 @@
     will-change: opacity, max-height, margin;
     font-weight: 300;
     font-size: 16px;
-    line-height: 125%;
+    line-height: 20px;
     color: $primary-dark;
 
     @media (min-width: $tablet-width) {
       max-width: 560px;
       font-size: 18px;
-      line-height: 133%;
+      line-height: 24px;
     }
 
     @media (min-width: $desktop-width) {

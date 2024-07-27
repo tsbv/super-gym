@@ -6,7 +6,7 @@
   gap: 1px 3px;
   font-weight: 300;
   font-size: 16px;
-  line-height: 125%;
+  line-height: 20px;
   color: $white;
 
   &::before {
@@ -30,7 +30,7 @@
   @media (min-width: $tablet-width) {
     grid-template-columns: 13px 37px;
     font-size: 18px;
-    line-height: 133%;
+    line-height: 24px;
     gap: 4px 5px;
     align-items: center;
   }
@@ -51,10 +51,11 @@
   grid-row: 2;
   font-weight: 700;
   font-size: 24px;
-  line-height: 100%;
+  line-height: 24px;
 
   @media (min-width: $desktop-width) {
     font-size: 40px;
+    line-height: 40px;
   }
 }
 
@@ -62,12 +63,12 @@
   grid-row: 2;
   font-weight: 400;
   font-size: 12px;
-  line-height: 100%;
+  line-height: 12px;
   color: $white;
 
   @media (min-width: $tablet-width) {
     font-size: 14px;
-    line-height: 157%;
+    line-height: 22px;
   }
 }
 
@@ -76,10 +77,11 @@
   grid-column: 1 / -1;
   font-weight: 700;
   font-size: 24px;
-  line-height: 100%;
+  line-height: 24px;
   color: $white;
 
   @media (min-width: $desktop-width) {
     font-size: 40px;
+    line-height: 40px;
   }
 }
