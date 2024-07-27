@@ -2,7 +2,7 @@
   padding: 0;
 
   @media (min-width: $desktop-width) {
-    background: linear-gradient(90deg, $primary-dark 50%, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 1) 100%);
+    background: linear-gradient(90deg, $primary-dark 50%, $white 50%, $white 100%);
     position: relative;
     margin-bottom: -1px;
 
