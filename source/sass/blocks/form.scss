@@ -24,7 +24,7 @@
     margin: 0;
     max-width: 477px;
     grid-template-columns: 223px 223px;
-    gap: 9px 30px;
+    gap: 7px 30px;
     justify-content: start;
   }
 }
@@ -97,6 +97,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    margin: 5px 0 0;
     padding: 28px 27px 26px;
   }
 }

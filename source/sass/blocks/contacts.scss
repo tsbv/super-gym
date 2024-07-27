@@ -31,6 +31,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    margin: 0 0 36px;
     text-align: start;
   }
 }
@@ -62,18 +63,18 @@
 
   @media (min-width: $desktop-width) {
     grid-template-columns: 178px 178px;
-    gap: 14px 120px;
+    gap: 14px 121px;
   }
 }
 
 .contacts__address {
   font-style: normal;
   font-size: 14px;
-  line-height: 143%;
+  line-height: 20px;
   color: $primary-dark;
 
   @media (min-width: $tablet-width) {
-    line-height: 157%;
+    line-height: 22px;
   }
 }
 
@@ -82,10 +83,11 @@
   flex-direction: column;
   gap: 12px;
   font-size: 20px;
-  line-height: 100%;
+  line-height: 20px;
 
   @media (min-width: $tablet-width) {
     font-size: 24px;
+    line-height: 24px;
     gap: 6px;
 
     &:nth-child(2),
@@ -93,24 +95,24 @@
       order: 3;
     }
   }
-
-  @media (min-width: $desktop-width) {
-    gap: 7px;
-  }
 }
 
 .contacts__schedule {
   margin: 0;
   font-size: 14px;
-  line-height: 143%;
+  line-height: 20px;
   color: $primary-dark;
+
+  @media (min-width: $tablet-width) {
+    line-height: 22px;
+  }
 }
 
 .contacts__phone {
   align-self: flex-start;
   text-decoration: none;
   font-size: 14px;
-  line-height: 143%;
+  line-height: 20px;
   color: $primary-dark;
 
   @media (hover: hover) {
@@ -122,6 +124,10 @@
 
   &:active {
     color: $primary-dark;
+  }
+
+  @media (min-width: $tablet-width) {
+    line-height: 22px;
   }
 }
 
@@ -130,7 +136,7 @@
   text-decoration: none;
   color: $primary-dark;
   font-size: 14px;
-  line-height: 143%;
+  line-height: 20px;
 
   @media (hover: hover) {
     &:hover {
@@ -141,5 +147,9 @@
 
   &:active {
     color: $primary-dark;
+  }
+
+  @media (min-width: $tablet-width) {
+    line-height: 22px;
   }
 }

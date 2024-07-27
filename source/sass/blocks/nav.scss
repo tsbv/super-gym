@@ -13,7 +13,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0;
+    padding: 0 0 2px;
     gap: 62.5px;
   }
 }
@@ -22,12 +22,12 @@
   padding: 5px 10px;
   text-decoration: none;
   font-size: 14px;
-  line-height: 143%;
+  line-height: 20px;
   font-weight: 400;
   color: $white;
 
   @media (min-width: $tablet-width) {
-    line-height: 157%;
+    line-height: 22px;
   }
 
   @media (hover: hover) {
