@@ -30,7 +30,7 @@
   &--active {
     border: none;
     color: $white;
-    background: linear-gradient(100deg, $accent-bg 0%, #003eb7 100%);
+    background: linear-gradient(100deg, $accent-bg 0%, $secondary-bg 100%);
   }
 
   @media (min-width: $tablet-width) {
@@ -57,7 +57,7 @@
 
   &:active {
     color: $white;
-    background: linear-gradient(100deg, $accent-bg 0%, #003eb7 100%);
+    background: linear-gradient(100deg, $accent-bg 0%, $secondary-bg 100%);
     box-shadow: none;
   }
 }

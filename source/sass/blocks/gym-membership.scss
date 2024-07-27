@@ -11,7 +11,7 @@
     left: 8px;
     width: calc(100% - 16px);
     height: calc(100% - 16px);
-    background-color: #ffffff;
+    background-color: $white;
     z-index: -1;
   }
 
@@ -20,7 +20,7 @@
   }
 
   &:has(.gym-membership__link:hover) {
-    background: linear-gradient(151deg, $accent-bg 0%, #003eb7 100%);
+    background: linear-gradient(151deg, $accent-bg 0%, $secondary-bg 100%);
 
     &::before {
       content: "";
@@ -28,7 +28,7 @@
   }
 
   &:focus-within {
-    background: linear-gradient(151deg, $accent-bg 0%, #003eb7 100%);
+    background: linear-gradient(151deg, $accent-bg 0%, $secondary-bg 100%);
 
     &::before {
       content: "";
@@ -120,13 +120,13 @@
     &:hover {
       color: $white;
       box-shadow: none;
-      background: linear-gradient(151deg, $accent-bg 0%, #003eb7 100%);
+      background: linear-gradient(151deg, $accent-bg 0%, $secondary-bg 100%);
     }
   }
 
   &:active {
     box-shadow: none;
-    background: linear-gradient(151deg, $accent-bg 0%, #003eb7 100%);
+    background: linear-gradient(151deg, $accent-bg 0%, $secondary-bg 100%);
     color: #deb9d0;
   }
 }
