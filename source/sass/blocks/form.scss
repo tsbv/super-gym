@@ -24,6 +24,8 @@
     margin: 0;
     max-width: 477px;
     grid-template-columns: 223px 223px;
+    gap: 9px 30px;
+    justify-content: start;
   }
 }
 
@@ -92,6 +94,10 @@
   @media (min-width: $tablet-width) {
     padding: 27px;
     grid-column: 1 / -1;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 28px 27px 26px;
   }
 }
 

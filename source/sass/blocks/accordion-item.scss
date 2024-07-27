@@ -7,11 +7,11 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding: 23px 0;
+    padding: 24px 0 22px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 23px 0 22px;
+    padding: 24px 0 21px;
   }
 
   .accordion-item__button {
@@ -48,6 +48,7 @@
     @media (min-width: $desktop-width) {
       max-width: 660px;
       font-size: 24px;
+      transform: translateY(-1px);
     }
   }
 
@@ -72,6 +73,7 @@
 
     @media (min-width: $desktop-width) {
       max-width: 658px;
+      transform: translateY(1px);
     }
   }
 
@@ -154,7 +156,7 @@
     will-change: opacity, max-height, margin;
 
     @media (min-width: $tablet-width) {
-      margin: 11px 0 0;
+      margin: 10px 0 0;
     }
 
     @media (min-width: $desktop-width) {

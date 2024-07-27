@@ -58,7 +58,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    gap: 0 43px;
+    gap: 0 44px;
     grid-auto-rows: max-content;
 
     &:nth-child(1) {
@@ -80,7 +80,7 @@
     &:nth-child(2) {
       grid-column: 3;
       grid-row: 1;
-      gap: 8px 80px;
+      gap: 8px 79px;
     }
 
     &:nth-child(3) {
@@ -90,7 +90,7 @@
 
     &:nth-child(5) {
       grid-column: 3;
-      gap: 8px 80px;
+      gap: 8px 81px;
     }
 
     &:last-child {
@@ -159,6 +159,7 @@
     @media (min-width: $desktop-width) {
       min-width: 210px;
       font-size: 22px;
+      transform: translateY(1.5px);
     }
   }
 
@@ -247,6 +248,7 @@
       margin: 0 0 18px;
       min-width: auto;
       font-size: 26px;
+      transform: none;
     }
   }
 

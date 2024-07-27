@@ -3,11 +3,11 @@
   background-color: $primary-bg;
 
   @media (min-width: $tablet-width) {
-    padding: 60px 45px;
+    padding: 61px 45px 60px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 100px 103px;
+    padding: 99px 103px 100px;
   }
 }
 
@@ -24,12 +24,13 @@
   text-align: center;
 
   @media (min-width: $tablet-width) {
-    margin: 0 0 45px;
+    margin: 0 0 44px;
   }
 
   @media (min-width: $desktop-width) {
     margin: 0;
     grid-column: 1 / -1;
     text-align: start;
+    transform: translateY(1px);
   }
 }

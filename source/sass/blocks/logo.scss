@@ -1,10 +1,6 @@
 .logo {
   display: flex;
   align-items: center;
-
-  @media (min-width: $desktop-width) {
-    padding-bottom: 4px;
-  }
 }
 
 .logo__image {

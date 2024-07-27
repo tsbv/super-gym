@@ -62,7 +62,7 @@
 
   @media (min-width: $desktop-width) {
     grid-template-columns: 178px 178px;
-    gap: 15px 120px;
+    gap: 14px 120px;
   }
 }
 
@@ -92,6 +92,10 @@
     &:nth-child(4) {
       order: 3;
     }
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 7px;
   }
 }
 
