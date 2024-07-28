@@ -166,6 +166,7 @@
   color: $price-shadow;
   opacity: 0.48;
   z-index: -1;
+  overflow: hidden;
 
   @media (min-width: $tablet-width) {
     font-size: 100px;
