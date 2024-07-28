@@ -44,6 +44,7 @@
 
   img {
     margin: 0 auto 10px;
+    display: block;
 
     @media (min-width: $tablet-width) {
       margin: 0;
