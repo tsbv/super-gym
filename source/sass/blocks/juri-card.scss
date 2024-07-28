@@ -10,10 +10,7 @@
       }
 
       .juri-card__name {
-        position: absolute;
-        top: 46px;
-        z-index: 1;
-        transition: top 0.3s ease-in-out;
+        display: none;
       }
     }
   }
@@ -26,10 +23,7 @@
     }
 
     .juri-card__name {
-      position: absolute;
-      top: 46px;
-      z-index: 1;
-      transition: top 0.3s ease-in-out;
+      display: none;
     }
   }
 }
@@ -49,6 +43,16 @@
   bottom: 24px;
   left: 50%;
   transform: translateX(-50%);
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 22px;
+  text-align: center;
+  color: $white;
+}
+
+.juri-card__info-name {
+  margin: 0 0 9px;
+  display: block;
   font-weight: 400;
   font-size: 22px;
   line-height: 22px;
