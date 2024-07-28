@@ -47,7 +47,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0 0 71px;
+    margin: 0 0 70px;
     padding: 0;
     max-width: 118px;
   }
@@ -83,7 +83,7 @@
   font-weight: 800;
   font-size: 62px;
   line-height: 62px;
-  letter-spacing: 0.02em;
+  letter-spacing: 1px;
   text-transform: uppercase;
   text-align: right;
   color: $white;
@@ -91,14 +91,14 @@
   @media (min-width: $tablet-width) {
     font-size: 72px;
     line-height: 85px;
-    letter-spacing: 0.03em;
+    letter-spacing: 2px;
   }
 
   @media (min-width: $desktop-width) {
     margin-right: 2px;
     font-size: 92px;
     line-height: 110px;
-    letter-spacing: 0.04em;
+    letter-spacing: 4px;
   }
 }
 

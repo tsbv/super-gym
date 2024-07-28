@@ -1,5 +1,5 @@
 .form {
-  padding: 70px 15px;
+  padding: 71px 15px 70px;
   background-color: $primary-dark;
 
   @media (min-width: $tablet-width) {
@@ -30,7 +30,7 @@
 }
 
 .form__title {
-  margin: 0 0 34px;
+  margin: 0 0 33px;
   color: $white;
 
   @media (min-width: $tablet-width) {

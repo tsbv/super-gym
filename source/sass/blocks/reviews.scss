@@ -1,5 +1,5 @@
 .reviews {
-  padding: 40px;
+  padding: 41px 40px 40px;
 
   @media (min-width: $tablet-width) {
     padding: 60px 45px;
@@ -21,7 +21,7 @@
 }
 
 .reviews__title {
-  margin: 0 0 40px;
+  margin: 0 0 39px;
   text-align: center;
 
   @media (min-width: $tablet-width) {
