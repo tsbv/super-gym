@@ -1,8 +1,11 @@
-import { Swiper } from './vendor/swiper-bundle.min';
+import Swiper from 'swiper';
+import { Navigation } from 'swiper/modules';
+import 'swiper/css';
 
 const initJurySlider = () => {
   const sliderJuriEl = document.querySelector('.swiper-juri');
   const swiperJuri = new Swiper(sliderJuriEl, {
+    modules: [Navigation],
     slidesPerView: 4,
     spaceBetween: 40,
     simulateTouch: true,
