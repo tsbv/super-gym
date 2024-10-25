@@ -1,0 +1,26 @@
+name: Deploy to GitHub-Pages
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  deploy:
+    permissions:
+      contents: write
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: 'package.json'
+          cache: npm
+      - run: npm ci
+      - run: npm run build
+        env:
+          REPO_NAME: ${{ github.event.repository.name }}
+      - uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: ./dist
+          branch: gh-pages
